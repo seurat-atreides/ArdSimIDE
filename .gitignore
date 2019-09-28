@@ -1,0 +1,5 @@
+build_*/build/
+build_*/release/
+build_*/Makefile*
+build_*/*.cpp
+SimulIDE.pro.*
