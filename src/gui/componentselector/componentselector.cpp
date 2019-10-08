@@ -270,7 +270,6 @@ void ComponentSelector::addItem( const QString &caption, const QString &_categor
     item->setData( 0, Qt::UserRole, type );
     
     if( ( type == "Subcircuit" )
-      ||( type == "PIC" )
       ||( type == "AVR" )
       ||( type == "Arduino" ) )
     {

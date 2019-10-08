@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2012 by santiago González                               *
+ *   Copyright (C) 2012 by Santiago González                               *
  *   santigoro@gmail.com                                                   *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -20,12 +20,9 @@
 #ifndef PROCESSOR_H
 #define PROCESSOR_H
 
-//#include <QtGui>
 
-#include "ramtable.h"
 #include "terminalwidget.h"
 
-class RamTable;
 
 class MAINMODULE_EXPORT BaseProcessor : public QObject
 {
@@ -69,8 +66,6 @@ class MAINMODULE_EXPORT BaseProcessor : public QObject
         virtual void initialized();
         virtual QStringList getRegList() { return m_regList; }
         
-        virtual RamTable* getRamTable() { return m_ramTable; }
-        
         virtual void setRegisters();
     
     protected:
@@ -88,10 +83,8 @@ class MAINMODULE_EXPORT BaseProcessor : public QObject
         int  m_msimStep;
         double m_nextCycle;
 
-        RamTable* m_ramTable;
         QStringList m_regList;
         QHash<QString, int> m_regsTable;     // int max 32 bits
-        QHash<QString, float> m_floatTable;  // float 32 bits
         QHash<QString, QString> m_typeTable;
 
         bool m_resetStatus;

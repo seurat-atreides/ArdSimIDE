@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2012 by santiago González                               *
+ *   Copyright (C) 2012 by Santiago González                               *
  *   santigoro@gmail.com                                                   *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -34,7 +34,6 @@ BaseProcessor::BaseProcessor( QObject* parent )
     m_resetStatus = false;
     m_usartTerm  = false;
     m_serialPort = false;
-    m_ramTable   = 0l;
     m_symbolFile = "";
     m_device     = "";
 }
@@ -46,12 +45,6 @@ void BaseProcessor::terminate()
 {
     //qDebug() <<"\nBaseProcessor::terminate "<<m_device<<m_symbolFile<<"\n";
 
-    if( m_ramTable )
-    {
-        MainWindow::self()->m_ramTabWidgetLayout->removeWidget( m_ramTable );
-        delete m_ramTable;
-        m_ramTable   = 0l;
-    }
     m_pSelf = 0l;
     m_loadStatus = false;
     m_symbolFile = "";
@@ -66,12 +59,6 @@ void BaseProcessor::initialized()
     m_nextCycle = m_mcuStepsPT;
     m_msimStep = 0;
 
-    if( m_ramTable == 0l )
-    {
-        m_ramTable = new RamTable( this );
-        MainWindow::self()->m_ramTabWidgetLayout->addWidget( m_ramTable );
-        //qDebug() << "RmTable:" << m_ramTable;
-    }
 }
 
 void BaseProcessor::runSimuStep()
@@ -157,7 +144,6 @@ void BaseProcessor::updateRamValue( QString name )
     {
         float value = 0;
         memcpy(&value, ba, 4);
-        m_ramTable->setItemValue( 1, value  );
     }
     else                                              // char, int, long
     {
@@ -193,10 +179,8 @@ void BaseProcessor::updateRamValue( QString name )
                 value = val;
             }
         }
-        m_ramTable->setItemValue( 2, value  );
         
-        if     ( type.contains( "8" ) ) m_ramTable->setItemValue( 3, decToBase(value, 2, 8)  );
-        else if( type.contains( "string" ) ) 
+        if( type.contains( "string" ) ) 
         {
             QString strVal = "";
             for( int i=address; i<=address+value; i++ )
@@ -208,13 +192,11 @@ void BaseProcessor::updateRamValue( QString name )
                 strVal += str; //QByteArray::fromHex( getRamValue( i ) );
             }
             //qDebug() << "string" << name << value << strVal;
-            m_ramTable->setItemValue( 3, strVal  );
         }
         
     }
     //qDebug()<<name<<type <<address<<value;
     //if( !type.contains( "8" ) ) 
-    m_ramTable->setItemValue( 1, type  );
 }
 
 
@@ -295,7 +277,7 @@ void BaseProcessor::uartOut( uint32_t value ) // Send value to OutPanelText
         QByteArray ba;
         ba.resize(1);
         ba[0] = value;
-        //ba[1] = 0;
+        //~ba[1] = 0;
         CircuitWidget::self()->writeSerialPortWidget( ba );
     }
 }
