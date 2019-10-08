@@ -54,7 +54,6 @@
 #include "hd44780.h"
 #include "i2cram.h"
 #include "i2ctoparallel.h"
-//#include "inbus.h"
 #include "inductor.h"
 #include "keypad.h"
 #include "ks0108.h"
@@ -70,8 +69,6 @@
 #include "mux_analog.h"
 #include "op_amp.h"
 #include "oscope.h"
-//#include "outbus.h"
-#include "piccomponent.h"
 #include "pcd8544.h"
 #include "probe.h"
 #include "potentiometer.h"
@@ -161,7 +158,6 @@ void ItemLibrary::loadItems()
     addItem( Servo::libraryItem() );
     addItem( AudioOut::libraryItem() );
     // Micro
-    addItem( PICComponent::libraryItem() );
     addItem( AVRComponent::libraryItem() );
     addItem( Arduino::libraryItem() );
     addItem( new LibraryItem( tr("Sensors"),tr("Micro"), "1to2.png","", 0l ) );

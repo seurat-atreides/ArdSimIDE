@@ -22,9 +22,7 @@
 #include "circuit.h"
 #include "propertieswidget.h"
 #include "componentselector.h"
-#include "editorwindow.h"
 #include "circuitwidget.h"
-#include "filewidget.h"
 #include "utils.h"
 #include "simuapi_apppath.h"
 
@@ -69,7 +67,6 @@ MainWindow::~MainWindow(){ }
 
 void MainWindow::closeEvent( QCloseEvent *event )
 {
-    if( !m_editor->close() )      { event->ignore(); return; }
     if( !m_circuit->newCircuit()) { event->ignore(); return; }
     
     writeSettings();
@@ -95,8 +92,6 @@ void MainWindow::writeSettings()
 
     foreach( QTreeWidgetItem* item, list  )
         m_settings.setValue( item->text(0)+"/collapsed", !item->isExpanded() );
-
-    FileWidget::self()->writeSettings();
 }
 
 void MainWindow::setTitle( QString title )
@@ -137,29 +132,21 @@ void MainWindow::createWidgets()
     m_components->setObjectName( "components" );
     m_sidepanel->addTab( m_components, tr("Components") );
 
-    m_ramTabWidget = new QWidget( this );
-    m_ramTabWidget->setObjectName( "ramTabWidget" );
-    m_ramTabWidgetLayout = new QGridLayout( m_ramTabWidget );
-    m_ramTabWidgetLayout->setSpacing(0);
-    m_ramTabWidgetLayout->setContentsMargins(0, 0, 0, 0);
-    m_ramTabWidgetLayout->setObjectName( "ramTabWidgetLayout" );
-    m_sidepanel->addTab( m_ramTabWidget, tr( "RamTable" ));
+    //~ m_ramTabWidget = new QWidget( this );
+    //~ m_ramTabWidget->setObjectName( "ramTabWidget" );
+    //~ m_ramTabWidgetLayout = new QGridLayout( m_ramTabWidget );
+    //~ m_ramTabWidgetLayout->setSpacing(0);
+    //~ m_ramTabWidgetLayout->setContentsMargins(0, 0, 0, 0);
+    //~ m_ramTabWidgetLayout->setObjectName( "ramTabWidgetLayout" );
+    //~ m_sidepanel->addTab( m_ramTabWidget, tr( "RamTable" ));
 
     m_itemprop = new PropertiesWidget( this );
     m_itemprop->setObjectName( "properties" );
     m_sidepanel->addTab( m_itemprop,  tr( "Properties" ));
-    
-    m_fileSystemTree = new FileWidget( this );
-    m_fileSystemTree->setObjectName( "fileExplorer" );
-    m_sidepanel->addTab( m_fileSystemTree, tr( "File explorer" ) );
 
     m_circuit = new CircuitWidget( this );
     m_circuit->setObjectName( "circuit" );
     m_Centralsplitter->addWidget( m_circuit );
-    
-    m_editor = new EditorWindow( this );
-    m_editor->setObjectName(QString::fromUtf8("editor"));
-    m_Centralsplitter->addWidget( m_editor );
 
     baseWidgetLayout->addWidget( m_Centralsplitter, 0, 0 );
 
@@ -167,7 +154,7 @@ void MainWindow::createWidgets()
     sizes << 150 << 350 << 500;
     m_Centralsplitter->setSizes( sizes );
 
-    this->showMaximized();
+    //~ this->showMaximized();
 }
 
 void MainWindow::loadPlugins()

@@ -20,7 +20,6 @@
 #include "circuitwidget.h"
 #include "mainwindow.h"
 #include "circuit.h"
-#include "filebrowser.h"
 
 CircuitWidget*  CircuitWidget::m_pSelf = 0l;
 
@@ -185,7 +184,6 @@ void CircuitWidget::loadCirc( QString path )
         m_lastCircDir = path;
         MainWindow::self()->setTitle(path.split("/").last());
         MainWindow::self()->settings()->setValue( "lastCircDir", m_lastCircDir );
-        //FileBrowser::self()->setPath(m_lastCircDir);
         m_circView.setCircTime( 0 );
     }
 }
@@ -219,7 +217,6 @@ bool CircuitWidget::saveCircAs()
         QString fileName = m_curCirc;
         MainWindow::self()->setTitle(fileName.split("/").last());
         MainWindow::self()->settings()->setValue( "lastCircDir", m_lastCircDir );
-        //FileBrowser::self()->setPath(m_lastCircDir);
     }
     return saved;
 }

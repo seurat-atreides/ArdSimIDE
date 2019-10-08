@@ -22,7 +22,7 @@
 
 //#include <QtGui>
 
-#include "ramtable.h"
+//~ #include "ramtable.h"
 #include "terminalwidget.h"
 
 class RamTable;

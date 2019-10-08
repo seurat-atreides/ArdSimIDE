@@ -25,8 +25,6 @@
 class PropertiesWidget;
 class ComponentSelector;
 class CircuitWidget;
-class EditorWindow;
-class FileWidget;
 
 class MAINMODULE_EXPORT MainWindow : public QMainWindow
 {
@@ -51,8 +49,8 @@ class MAINMODULE_EXPORT MainWindow : public QMainWindow
         void setFontScale( double scale ) { m_fontScale = scale; }
         
         QTabWidget*  m_sidepanel;
-        QWidget*     m_ramTabWidget;
-        QGridLayout* m_ramTabWidgetLayout;
+        //~ QWidget*     m_ramTabWidget;
+        //~ QGridLayout* m_ramTabWidgetLayout;
 
     protected:
         void closeEvent(QCloseEvent* event);
@@ -85,11 +83,9 @@ class MAINMODULE_EXPORT MainWindow : public QMainWindow
         
         CircuitWidget*      m_circuit;
         ComponentSelector*  m_components;
-        PropertiesWidget*   m_itemprop;
-        EditorWindow*       m_editor;
+        PropertiesWidget*   m_itemprop;;
         
         QSplitter*  m_Centralsplitter;
-        FileWidget* m_fileSystemTree;
 };
 
 #endif

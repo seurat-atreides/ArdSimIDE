@@ -1,5 +1,5 @@
  ###########################################################################
- #   Copyright (C) 2012   by santiago González                             #
+ #   Copyright (C) 2012   by Santiago González                             #
  #   santigoro@gmail.com                                                   #
  #                                                                         #
  #   This program is free software; you can redistribute it and/or modify  #
@@ -17,13 +17,7 @@
  #                                                                         #
  ###########################################################################
  
-
-win32 {
-    VERSION     = "0.3.12.11"
-}
-unix {
-    VERSION     = "0.3.12-SR1"
-}
+VERSION     = "0.0.1"
 
 TEMPLATE = app
 
@@ -45,19 +39,12 @@ SOURCES += ../src/*.cpp \
     ../src/gui/terminalwidget/*.cpp \
     ../src/gui/QPropertyEditor/*.cpp \
     ../src/gui/componentselector/*.cpp \
-    ../src/gui/filebrowser/*.cpp \
-    ../src/gui/editorwidget/*.cpp \
-    ../src/gui/editorwidget/findreplacedialog/*.cpp \
     ../src/gui/serialporwidget/*.cpp \
     ../src/simulator/*.cpp \
     ../src/simulator/elements/*.cpp \
     ../src/simulator/elements/processors/*.cpp \
     ../src/simavr/sim/*.c \
-    ../src/simavr/cores/*.c \
-    ../src/gpsim/*.cc \
-    ../src/gpsim/devices/*.cc \
-    ../src/gpsim/modules/*.cc \
-    ../src/gpsim/registers/*.cc
+    ../src/simavr/cores/*.c
 
 HEADERS += ../src/*.h \
     ../src/gui/*.h \
@@ -69,9 +56,6 @@ HEADERS += ../src/*.h \
     ../src/gui/terminalwidget/*.h \
     ../src/gui/QPropertyEditor/*.h \
     ../src/gui/componentselector/*.h \
-    ../src/gui/filebrowser/*.h \
-    ../src/gui/editorwidget/*.h \
-    ../src/gui/editorwidget/findreplacedialog/*.h \
     ../src/gui/serialporwidget/*.h \
     ../src/simulator/*.h \
     ../src/simulator/elements/*.h \
@@ -79,11 +63,7 @@ HEADERS += ../src/*.h \
     ../src/simavr/sim/*.h \
     ../src/simavr/sim/avr/*.h  \
     ../src/simavr/cores/*.h \
-    ../resources/data/*.xml \
-    ../src/gpsim/*.h \
-    ../src/gpsim/devices/*.h \
-    ../src/gpsim/modules/*.h \
-    ../src/gpsim/registers/*.h
+    ../resources/data/*.xml
 
 INCLUDEPATH += ../src \
     ../src/gui \
@@ -95,9 +75,6 @@ INCLUDEPATH += ../src \
     ../src/gui/terminalwidget \
     ../src/gui/QPropertyEditor \
     ../src/gui/componentselector \
-    ../src/gui/filebrowser \
-    ../src/gui/editorwidget \
-    ../src/gui/editorwidget/findreplacedialog \
     ../src/gui/serialporwidget \
     ../src/simulator \
     ../src/simulator/elements \
@@ -105,11 +82,7 @@ INCLUDEPATH += ../src \
     ../src/simavr \
     ../src/simavr/sim \
     ../src/simavr/sim/avr \
-    ../src/simavr/cores \
-    ../src/gpsim \
-    ../src/gpsim/devices \
-    ../src/gpsim/modules \
-    ../src/gpsim/registers
+    ../src/simavr/cores
 
 TRANSLATIONS +=  \
     ../resources/translations/simulide.ts \
@@ -141,7 +114,8 @@ QMAKE_CFLAGS += -Wno-implicit-function-declaration
 QMAKE_CFLAGS += -Wno-int-conversion
 QMAKE_CFLAGS += -Wno-sign-compare
 QMAKE_CFLAGS += -O2
-QMAKE_CFLAGS += -fPIC
+
+QMAKE_LFLAGS += -no-pie
 
 win32 {
     LIBS +=  ../resources/bin/libglibc_win.a
@@ -200,7 +174,7 @@ POST_TARGETDEPS     += copy2dest
 
 
 message( "-----------------------------" )
-message( "    " $$TARGET_NAME )
+message( "   " $$TARGET_NAME )
 message( "    TARGET_PREFIX=" $$TARGET_PREFIX )
 message( "-----------------------------" )
 
