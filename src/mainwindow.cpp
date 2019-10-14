@@ -132,14 +132,6 @@ void MainWindow::createWidgets()
     m_components->setObjectName( "components" );
     m_sidepanel->addTab( m_components, tr("Components") );
 
-    //~ m_ramTabWidget = new QWidget( this );
-    //~ m_ramTabWidget->setObjectName( "ramTabWidget" );
-    //~ m_ramTabWidgetLayout = new QGridLayout( m_ramTabWidget );
-    //~ m_ramTabWidgetLayout->setSpacing(0);
-    //~ m_ramTabWidgetLayout->setContentsMargins(0, 0, 0, 0);
-    //~ m_ramTabWidgetLayout->setObjectName( "ramTabWidgetLayout" );
-    //~ m_sidepanel->addTab( m_ramTabWidget, tr( "RamTable" ));
-
     m_itemprop = new PropertiesWidget( this );
     m_itemprop->setObjectName( "properties" );
     m_sidepanel->addTab( m_itemprop,  tr( "Properties" ));
@@ -153,8 +145,6 @@ void MainWindow::createWidgets()
     QList<int> sizes;
     sizes << 150 << 350 << 500;
     m_Centralsplitter->setSizes( sizes );
-
-    //~ this->showMaximized();
 }
 
 void MainWindow::loadPlugins()
@@ -199,12 +189,7 @@ void MainWindow::loadPlugins()
 void MainWindow::loadPluginsAt( QDir pluginsDir )
 {
     QString pluginName = "*plugin";
-
-#ifndef Q_OS_UNIX
-    pluginName += ".dll";
-#else
     pluginName += ".so";
-#endif
 
     pluginsDir.setNameFilters( QStringList(pluginName) );
 

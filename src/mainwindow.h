@@ -49,8 +49,6 @@ class MAINMODULE_EXPORT MainWindow : public QMainWindow
         void setFontScale( double scale ) { m_fontScale = scale; }
         
         QTabWidget*  m_sidepanel;
-        //~ QWidget*     m_ramTabWidget;
-        //~ QGridLayout* m_ramTabWidgetLayout;
 
     protected:
         void closeEvent(QCloseEvent* event);
