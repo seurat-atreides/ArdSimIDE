@@ -49,10 +49,10 @@ int main(int argc, char *argv[])
     QApplication app( argc, argv );
 
     QString locale   = QLocale::system().name().split("_").first();
-    QString langFile = "../share/simulide/translations/simulide_"+locale+".qm";
+    QString langFile = "../share/qtardusim/translations/qtardusim_"+locale+".qm";
     
     QFile file( langFile );
-    if( !file.exists() ) langFile = "../share/simulide/translations/simulide_en.qm";
+    if( !file.exists() ) langFile = "../share/qtardusim/translations/qtardusim_en.qm";
     
     QTranslator translator;
     translator.load( langFile );

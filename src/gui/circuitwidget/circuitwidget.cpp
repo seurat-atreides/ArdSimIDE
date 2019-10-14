@@ -1,5 +1,5 @@
 /***************************************************************************
- *   Copyright (C) 2010 by santiago González                               *
+ *   Copyright (C) 2010 by Santiago González                               *
  *   santigoro@gmail.com                                                   *
  *                                                                         *
  *   This program is free software; you can redistribute it and/or modify  *
@@ -62,7 +62,7 @@ CircuitWidget::CircuitWidget( QWidget *parent  )
     QString appPath = QCoreApplication::applicationDirPath();
     
     m_lastCircDir = MainWindow::self()->settings()->value("lastCircDir").toByteArray();
-    if( m_lastCircDir.isEmpty() )  m_lastCircDir = appPath + "..share/simulide/examples";
+    if( m_lastCircDir.isEmpty() )  m_lastCircDir = appPath + "..share/qtardusim/examples";
     
     newCircuit();
     setRate(0);
@@ -101,8 +101,8 @@ void CircuitWidget::createActions()
     infoAct->setStatusTip(tr("Online Help"));
     connect( infoAct, SIGNAL( triggered()), this, SLOT(openInfo()));
     
-    aboutAct = new QAction( QIcon(":/about.png"),tr("About SimulIDE"), this);
-    aboutAct->setStatusTip(tr("About SimulIDE"));
+    aboutAct = new QAction( QIcon(":/about.png"),tr("About QtArduSim"), this);
+    aboutAct->setStatusTip(tr("About QtArduSim"));
     connect( aboutAct, SIGNAL( triggered()), this, SLOT(about()));
     
     aboutQtAct = new QAction( QIcon(":/about.png"),tr("About Qt"), this);
@@ -255,18 +255,16 @@ void CircuitWidget::powerCircDebug( bool run )
 
 void CircuitWidget::openInfo()
 {
-    QDesktopServices::openUrl(QUrl("http://simulide.blogspot.com"));
+    QDesktopServices::openUrl(QUrl("http://qtardusim.blogspot.com"));
 }
 
 void CircuitWidget::about()
 {
     QString t ="&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;";
-    QMessageBox::about( this, tr("About SimulIDE"),
-    "<b>Web site:</b> <a href=\"https://simulide.blogspot.com/\"> https://simulide.blogspot.com/ </a><br><br>"
-    "<b>Project:</b> <a href=\"https://sourceforge.net/projects/simulide/\"> https://sourceforge.net/projects/simulide/ </a><br><br>"
-    "<b>Report Bugs:</b> <a href=\"https://sourceforge.net/p/simulide/discussion/bugs/\"> https://sourceforge.net/p/simulide/discussion/bugs/ </a><br><br>"
-    "<b>Become a Patron:</b> <a href=\"https://www.patreon.com/simulide\"> https://www.patreon.com/simulide </a><br><br>"
-    "<br><br>"
+    QMessageBox::about( this, tr("About QtArduSim"),
+    "<b>Repository:</b> <a href=\"https://github.com/seurat-atreides/QtArduSim.git\"> https://github.com/seurat-atreides/QtArduSim.git </a><br><br>"
+    "<b>Project:</b> <a href=\"https://\"> TBD </a><br><br>"
+    "<b>Report Bugs:</b> <a href=\"https://github.com/seurat-atreides/QtArduSim/issues\"> https://github.com/seurat-atreides/QtArduSim/issues </a><br><br>"
                "<b>Creator:</b> Santiago Gonzalez. <br>"
                "<br>"
                "<b>Developers:</b> <br>"
@@ -292,12 +290,6 @@ void CircuitWidget::setRate( int rate )
     else 
         m_rateLabel->setText( tr("    Real Speed: ")+QString::number(rate) +" %" );
 }
-
-/*void CircuitWidget::setSerialPortWidget( QWidget* serialPortWidget )
-{
-    m_serialPortWidget = serialPortWidget;
-    m_horizontLayout.addWidget( m_serialPortWidget );
-}*/
 
 void CircuitWidget::showSerialPortWidget( bool showIt )
 {

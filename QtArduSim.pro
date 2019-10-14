@@ -17,7 +17,7 @@
  #                                                                         #
  ###########################################################################
  
-VERSION     = "0.0.2"
+VERSION     = "0.0.3"
 
 TEMPLATE = app
 
@@ -85,10 +85,10 @@ INCLUDEPATH += ../src \
     ../src/simavr/cores
 
 TRANSLATIONS +=  \
-    ../resources/translations/simulide.ts \
-    ../resources/translations/simulide_en.ts \
-    ../resources/translations/simulide_es.ts \
-    ../resources/translations/simulide_ru.ts 
+    ../resources/translations/qtardusim.ts \
+    ../resources/translations/qtardusim_en.ts \
+    ../resources/translations/qtardusim_es.ts \
+    ../resources/translations/qtardusim_ru.ts 
 
 RESOURCES = ../src/application.qrc
 
@@ -119,7 +119,7 @@ QMAKE_LFLAGS += -no-pie
 
 win32 {
     LIBS +=  ../resources/bin/libglibc_win.a
-    RC_ICONS += ../src/icons/simulide.ico
+    RC_ICONS += ../src/icons/qtardusim.ico
 }
 unix {
     QMAKE_LIBS += -lelf
@@ -133,7 +133,7 @@ CONFIG *= c++11
 DEFINES += MAINMODULE_EXPORT=
 DEFINES += APP_VERSION=\\\"$$VERSION\\\"
 
-TARGET_NAME = SimulIDE_$$VERSION$$
+TARGET_NAME = QtArduSim_$$VERSION$$
 
 CONFIG( release, debug|release ) {
         TARGET_PREFIX = $$BUILD_DIR/release/$$TARGET_NAME
@@ -151,7 +151,7 @@ INCLUDEPATH += $$OBJECTS_DIR
 
 DESTDIR = $$TARGET_PREFIX/bin
 
-TARGET = simulide
+TARGET = qtardusim
 
 mkpath( $$TARGET_PREFIX/bin )
 
@@ -161,13 +161,13 @@ QMAKE_EXTRA_TARGETS += runLrelease
 POST_TARGETDEPS     += runLrelease
 
 copy2dest.commands = \
-$(MKDIR)    $$TARGET_PREFIX/share/simulide/data ; \
-$(MKDIR)    $$TARGET_PREFIX/share/simulide/examples ; \
-$(MKDIR)    $$TARGET_PREFIX/share/simulide/translations ; \
-$(COPY_DIR) ../resources/data              $$TARGET_PREFIX/share/simulide ; \
-$(COPY_DIR) ../resources/examples          $$TARGET_PREFIX/share/simulide ; \
+$(MKDIR)    $$TARGET_PREFIX/share/qtardusim/data ; \
+$(MKDIR)    $$TARGET_PREFIX/share/qtardusim/examples ; \
+$(MKDIR)    $$TARGET_PREFIX/share/qtardusim/translations ; \
+$(COPY_DIR) ../resources/data              $$TARGET_PREFIX/share/qtardusim ; \
+$(COPY_DIR) ../resources/examples          $$TARGET_PREFIX/share/qtardusim ; \
 $(COPY_DIR) ../resources/icons             $$TARGET_PREFIX/share ; \
-$(MOVE)     ../resources/translations/*.qm $$TARGET_PREFIX/share/simulide/translations ;
+$(MOVE)     ../resources/translations/*.qm $$TARGET_PREFIX/share/qtardusim/translations ;
 
 QMAKE_EXTRA_TARGETS += copy2dest
 POST_TARGETDEPS     += copy2dest

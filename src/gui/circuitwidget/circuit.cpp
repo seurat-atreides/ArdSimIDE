@@ -665,7 +665,7 @@ void Circuit::circuitToDom()
     m_domDoc.clear();
     QDomElement circuit = m_domDoc.createElement("circuit");
     
-    circuit.setAttribute( "type",      "simulide_0.1" );
+    circuit.setAttribute( "type",      "qtardusim_0.1" );
     circuit.setAttribute( "speed",     QString::number( circSpeed() ) );
     circuit.setAttribute( "reactStep", QString::number( reactStep() ) );
     circuit.setAttribute( "noLinStep", QString::number( noLinStep() ) );
@@ -888,7 +888,7 @@ void Circuit::copy( QPointF eventpoint )
     }
     m_copyDoc.clear();
     QDomElement root = m_copyDoc.createElement("circuit");
-    root.setAttribute( "type", "simulide_0.1" );
+    root.setAttribute( "type", "qtardusim" );
     m_copyDoc.appendChild(root);
 
     listToDom( &m_copyDoc, &complist );
@@ -1053,7 +1053,7 @@ void Circuit::createSubcircuit()
             if( isNode ) nodes++;
         }
     }
-    QString subcircuit = "<!DOCTYPE SimulIDE>\n\n";
+    QString subcircuit = "<!DOCTYPE QtArduSim>\n\n";
     subcircuit += "<subcircuit enodes=\""+QString::number(nodes)+"\">\n\n";
 
     while( !connectionList.isEmpty() )

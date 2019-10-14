@@ -141,7 +141,7 @@ void ComponentSelector::loadXml( const QString &setFile )
                 if( element.hasAttribute("icon") )
                 {
                     QDir compSetDir( qApp->applicationDirPath() );
-                    compSetDir.cd( "../share/simulide/data/images" );
+                    compSetDir.cd( "../share/qtardusim/data/images" );
                     icon = compSetDir.absoluteFilePath( element.attribute("icon") );
                 }
                 QString name = element.attribute( "name" );

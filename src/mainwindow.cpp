@@ -31,12 +31,12 @@ MainWindow* MainWindow::m_pSelf = 0l;
 
 MainWindow::MainWindow()
           : QMainWindow()
-          , m_settings( "SimulIDE", "SimulIDE" )
+          , m_settings( "QtArduSim", "QtArduSim" )
 {
-    setWindowIcon( QIcon(":/simulide.png") );
+    setWindowIcon( QIcon(":/qtardusim.png") );
     m_pSelf   = this;
     m_circuit = 0l;
-    m_version = "SimulIDE-"+QString( APP_VERSION );
+    m_version = "QtArduSim-"+QString( APP_VERSION );
     
     this->setWindowTitle(m_version);
 
@@ -152,7 +152,7 @@ void MainWindow::loadPlugins()
     // Load main Plugins
     QDir pluginsDir( qApp->applicationDirPath() );
 
-    pluginsDir.cd( "../lib/simulide/plugins" );
+    pluginsDir.cd( "../lib/qtardusim/plugins" );
     
     loadPluginsAt( pluginsDir );
 
@@ -254,7 +254,7 @@ void MainWindow::unLoadPugin( QString pluginName )
 
 void MainWindow::applyStile()
 {
-    QFile file(":/simulide.qss");
+    QFile file(":/qtardusim.qss");
     file.open(QFile::ReadOnly);
 
     m_styleSheet = QLatin1String(file.readAll());
