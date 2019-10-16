@@ -1,4 +1,4 @@
-<circuit noLinStep="10" reactStep="50" animate="0" noLinAcc="5" type="simulide_0.1" speed="1000000">
+<circuit noLinStep="10" reactStep="50" animate="0" noLinAcc="5" type="qtardusim_0.1" speed="1000000">
  
 Buffer-723: 
 <item Out_High_V="5" Inverted="false" valLabelx="0" Input_High_V="2.5" hflip="1" x="-708" Open_Collector="false" Input_Low_V="2.5" valLabRot="0" vflip="1" Input_Imped="100000000000000" Out_Low_V="0" labelx="-16" labely="-24" Show_id="false" labelrot="0" y="516" id="Buffer-723" rotation="0" Out_Imped="40" objectName="Buffer-723" valLabely="0" itemtype="Buffer" Tristate="false"/>

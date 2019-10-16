@@ -1,4 +1,4 @@
-<circuit animate="0" noLinAcc="5" reactStep="50" noLinStep="10" type="simulide_0.1" speed="1000000">
+<circuit animate="0" noLinAcc="5" reactStep="50" noLinStep="10" type="qtardusim_0.1" speed="1000000">
  
 Node-2036: 
 <item objectName="Node-2036" valLabelx="0" vflip="1" rotation="0" labelx="-16" labelrot="0" id="Node-2036" Show_id="false" valLabRot="0" valLabely="0" labely="-24" y="-188" itemtype="Node" x="-1116" hflip="1"/>

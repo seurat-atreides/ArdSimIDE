@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Relay (all)-16: 
 <item Rcoil="100" labelrot="0" labely="-24" Itrig="0.02" vflip="-1" x="-284" valLabRot="0" y="-260" objectName="Relay (all)-16" valLabelx="-16" DT="true" itemtype="RelaySPST" rotation="-180" Poles="2" id="Relay (all)-16" hflip="1" labelx="-16" Show_id="false" valLabely="6"/>

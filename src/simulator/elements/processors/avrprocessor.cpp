@@ -110,7 +110,6 @@ bool AvrProcessor::loadFirmware( QString fileN )
             }
         }
     }
-#ifndef _WIN32
     else if( fileN.endsWith(".elf") )
     {
         f.flashsize = 0;
@@ -123,7 +122,6 @@ bool AvrProcessor::loadFirmware( QString fileN )
             return false;
         }
     }
-#endif
     else                                    // File extension not valid
     {
         QMessageBox::warning(0,tr("Error:"), 
@@ -218,28 +216,6 @@ void AvrProcessor::step()
     }
     m_nextCycle += m_mcuStepsPT;
     //qDebug() << "AvrProcessor::step"<<m_nextCycle<< m_avrProcessor->cycle;
-}
-
-void AvrProcessor::stepOne()
-{
-    //qDebug() <<"AvrProcessor::stepOne()"<<m_avrProcessor->cycle << m_nextCycle;
-
-    m_avrProcessor->run(m_avrProcessor);
-
-    while( m_avrProcessor->cycle >= m_nextCycle )
-    {
-        m_nextCycle += McuComponent::self()->freq(); //m_mcuStepsPT;
-        runSimuStep(); // 1 simu step = 1uS
-    }
-}
-
-void AvrProcessor::stepCpu()
-{
-    if( m_avrProcessor->state == cpu_Crashed ) 
-    {
-        //qDebug() << "AvrProcessor::step() CRASHED!!!";
-    }
-    else m_avrProcessor->run(m_avrProcessor);
 }
 
 int AvrProcessor::pc()

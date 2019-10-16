@@ -1,4 +1,4 @@
-<!DOCTYPE SimulIDE>
+<!DOCTYPE QtArduSim>
 
 <package name="74HC193" pins="16" width="4" height="9">
 

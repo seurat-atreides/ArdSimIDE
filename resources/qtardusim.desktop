@@ -1,0 +1,10 @@
+ [Desktop Entry]
+Version=0.3.10
+Name=QtArduSim
+GenericName=QtArduSim
+Comment=Electronic Circuit Simulator Software
+Exec=/home/user/QtArduSim_0.3.10/bin/qtardusim
+Icon=/home/user/QtArduSim_0.3.10/share/icons/hicolor/256x256/qtardusim.png
+Terminal=false
+Type=Application
+Categories=Electronics;EDA;

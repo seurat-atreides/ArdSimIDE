@@ -1,4 +1,4 @@
-<circuit reactStep="50" noLinAcc="5" noLinStep="10" type="simulide_0.1" speed="1000000">
+<circuit reactStep="50" noLinAcc="5" noLinStep="10" type="qtardusim_0.1" speed="1000000">
  
 Buffer-68: 
 <item valLabelx="0" y="-276" valLabely="0" Inverted="true" objectName="Buffer-68" vflip="1" hflip="1" labelx="-16" labely="-24" id="Buffer-68" itemtype="Buffer" Input_High_V="2.5" Show_id="false" Out_High_V="5" Input_Low_V="2.5" Tristate="false" Out_Low_V="0" labelrot="0" Input_Imped="100000000000000" x="-516" rotation="0" valLabRot="0" Out_Imped="40"/>

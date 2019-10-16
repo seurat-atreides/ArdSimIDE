@@ -3,6 +3,8 @@ build_*/release/
 build_*/Makefile*
 build_*/*.cpp
 *.pro.*
+html*
+latex*
 
 # C++ objects and libs
 *.slo

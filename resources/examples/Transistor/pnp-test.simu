@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Amperimeter-24: 
 <item Show_id="false" labelx="-12" objectName="Amperimeter-24" id="Amperimeter-24" labely="-24" vflip="1" valLabelx="-20" x="-340" labelrot="0" rotation="0" y="-220" valLabely="-22" itemtype="Amperimeter" valLabRot="0" hflip="1"/>

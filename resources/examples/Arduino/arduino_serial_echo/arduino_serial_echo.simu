@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1" speed="1000000" animate="0" reactStep="50" noLinStep="10" noLinAcc="5">
+<circuit type="qtardusim_0.1" speed="1000000" animate="0" reactStep="50" noLinStep="10" noLinAcc="5">
  
 Arduino Uno-1: 
 <item labelx="0" y="-748" id="Arduino Uno-1" Ser_Port="false" hflip="1" valLabely="0" Ser_Monitor="true" objectName="Arduino Uno-1" itemtype="Arduino" Program="arduino_serial_echo.ino.hex" labelrot="0" valLabelx="0" vflip="1" x="-988" Show_id="true" valLabRot="0" labely="-20" rotation="0" Mhz="16"/>

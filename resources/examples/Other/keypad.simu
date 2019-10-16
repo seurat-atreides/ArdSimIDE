@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Reistencia-22: 
 <item id="Reistencia-22" valLabRot="0" itemtype="Resistor" Unit=" Ω" valLabelx="-16" Show_res="false" x="-420" objectName="Reistencia-22" valLabely="6" vflip="1" labelx="-12" Show_id="false" Resistance="100" hflip="1" labely="-24" labelrot="0" rotation="0" y="-308"/>

@@ -7,4 +7,4 @@ Voltage Probe:
 - Right-Click and add to Plotter channel.
 
 More Info: 
- http://simulide.blogspot.com/p/probe.html
+ http://qtardusim.blogspot.com/p/probe.html

@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 lm 555-13: 
 <item labelx="0" id="lm555" y="-292" valLabelx="0" x="-572" valLabRot="0" vflip="1" rotation="0" valLabely="0" objectName="lm 555-13" Show_id="true" labely="-16" itemtype="Lm555" hflip="1" labelrot="0"/>

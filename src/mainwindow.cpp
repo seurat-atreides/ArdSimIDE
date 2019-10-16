@@ -1,21 +1,38 @@
-/***************************************************************************
- *   Copyright (C) 2012 by santiago González                               *
- *   santigoro@gmail.com                                                   *
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 3 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- *   This program is distributed in the hope that it will be useful,       *
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
- *   GNU General Public License for more details.                          *
- *                                                                         *
- *   You should have received a copy of the GNU General Public License     *
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.  *
- *                                                                         *
- ***************************************************************************/
+/**************************************************************************/
+/*!
+ * @file mainwindow.cpp
+ *
+ * @mainpage QtArduSim AVR MCU and electronic circuit simulator
+ *
+ * @section intro_sec Introduction
+ *
+ * This is the documentation for Adafruit's FXOS8700 driver for the
+ * Arduino platform.  It is designed specifically to work with the
+ * Adafruit FXOS8700 breakout: https://www.adafruit.com/products/3463
+ *
+ * These sensors use I2C to communicate, 2 pins (SCL+SDA) are required
+ * to interface with the breakout.
+ *
+ * Adafruit invests time and resources providing this open source code,
+ * please support Adafruit and open-source hardware by purchasing
+ * products from Adafruit!
+ *
+ * @section dependencies Dependencies
+ *
+ * This library depends on <a href="https://github.com/adafruit/Adafruit_Sensor">
+ * Adafruit_Sensor</a> being present on your system. Please make sure you have
+ * installed the latest version before using this library.
+ *
+ * @section author Santiago González
+ *
+ * Copyright (C) 2012 by Santiago González: santigoro@gmail.com
+ *
+ * @section license License
+ *
+ * See the GNU General Public License <http://www.gnu.org/licenses/> for more details.
+ *
+ */
+ /***************************************************************************/
 
 #include "mainwindow.h"
 #include "appiface.h"
@@ -31,12 +48,12 @@ MainWindow* MainWindow::m_pSelf = 0l;
 
 MainWindow::MainWindow()
           : QMainWindow()
-          , m_settings( "SimulIDE", "SimulIDE" )
+          , m_settings( "QtArduSim", "QtArduSim" )
 {
-    setWindowIcon( QIcon(":/simulide.png") );
+    setWindowIcon( QIcon(":/qtardusim.png") );
     m_pSelf   = this;
     m_circuit = 0l;
-    m_version = "SimulIDE-"+QString( APP_VERSION );
+    m_version = "QtArduSim-"+QString( APP_VERSION );
     
     this->setWindowTitle(m_version);
 
@@ -152,7 +169,7 @@ void MainWindow::loadPlugins()
     // Load main Plugins
     QDir pluginsDir( qApp->applicationDirPath() );
 
-    pluginsDir.cd( "../lib/simulide/plugins" );
+    pluginsDir.cd( "../lib/qtardusim/plugins" );
     
     loadPluginsAt( pluginsDir );
 
@@ -254,7 +271,7 @@ void MainWindow::unLoadPugin( QString pluginName )
 
 void MainWindow::applyStile()
 {
-    QFile file(":/simulide.qss");
+    QFile file(":/qtardusim.qss");
     file.open(QFile::ReadOnly);
 
     m_styleSheet = QLatin1String(file.readAll());

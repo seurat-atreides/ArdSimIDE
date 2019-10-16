@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 FlipFlop JK-30: 
 <item x="-340" Input_High_V="2.5" vflip="1" Out_High_V="5" id="FlipFlop JK-30" hflip="1" labelrot="0" valLabRot="0" Out_Low_V="0" Out_Imped="40" valLabelx="0" S_R_Inverted="true" Show_id="false" Clock_Inverted="true" y="-92" labely="-24" Input_Low_V="2.5" Input_Imped="100000000000000" itemtype="FlipFlopJK" labelx="-16" objectName="FlipFlop JK-30" valLabely="0" rotation="0"/>

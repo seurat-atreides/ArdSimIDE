@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Stepper-3: 
 <item x="-212" vflip="1" id="Stepper" hflip="1" labelrot="0" valLabRot="0" valLabelx="0" Resistance="186.59104522249845" Show_id="true" Unit=" Ω" Steps="64" y="-260" labely="-72" itemtype="Stepper" labelx="-28" objectName="Stepper-3" valLabely="0" rotation="0"/>

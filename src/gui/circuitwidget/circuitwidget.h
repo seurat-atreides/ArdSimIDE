@@ -51,7 +51,6 @@ class MAINMODULE_EXPORT CircuitWidget : public QWidget
         
         void powerCircOn();
         void powerCircOff();
-        void powerCircDebug( bool run );
         
     public slots:
         bool newCircuit();

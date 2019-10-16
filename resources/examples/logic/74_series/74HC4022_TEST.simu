@@ -1,4 +1,4 @@
-<circuit noLinAcc="5" type="simulide_0.1" reactStep="50" noLinStep="10" speed="1000000">
+<circuit noLinAcc="5" type="qtardusim_0.1" reactStep="50" noLinStep="10" speed="1000000">
  
 Probe-6: 
 <item id="Probe-6" PlotterCh="0" vflip="1" labelx="16" labelrot="45" rotation="-45" x="-228" Show_volt="true" objectName="Probe-6" Show_id="false" y="-164" valLabRot="45" valLabely="0" hflip="1" itemtype="Probe" labely="-16" valLabelx="16"/>

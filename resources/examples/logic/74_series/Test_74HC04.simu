@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 74HC04-14: 
 <item hflip="1" vflip="1" id="74HC04-14" valLabely="0" labelrot="0" Show_id="true" x="-356" labely="-30" valLabRot="0" objectName="74HC04-14" itemtype="Subcircuit" y="-172" labelx="-5" rotation="0" valLabelx="0"/>

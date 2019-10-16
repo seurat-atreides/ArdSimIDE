@@ -1,4 +1,4 @@
-<!DOCTYPE SimulIDE>
+<!DOCTYPE QtArduSim>
 
 
 <package name="8_N-ch_key" pins="18" width="4" height="10">

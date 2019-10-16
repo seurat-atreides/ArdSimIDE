@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Probe-7: 
 <item Show_id="false" labelx="16" objectName="Probe-7" id="Probe-7" labely="-16" vflip="1" valLabelx="16" Show_volt="true" x="-348" labelrot="45" rotation="-45" y="-292" valLabely="0" itemtype="Probe" valLabRot="45" hflip="1"/>

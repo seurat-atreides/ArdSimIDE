@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Text-29: 
 <item text="74HC273 Octal D-type flip-flop with reset;positive-edge trigger." Margin="5" x="-500" vflip="1" id="Text-29" hflip="1" labelrot="0" valLabRot="0" Fixed_Width="true" valLabelx="0" Show_id="false" y="-316" labely="-24" Border="1" itemtype="TextComponent" labelx="-16" objectName="Text-29" valLabely="0" rotation="0"/>

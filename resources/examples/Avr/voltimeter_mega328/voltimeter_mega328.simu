@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 atmega328-13: 
 <item labely="124" vflip="1" valLabRot="0" itemtype="AVR" id="atmega328" objectName="atmega328-13" x="-180" hflip="1" y="-212" valLabelx="0" rotation="0" labelrot="0" valLabely="0" labelx="-14" program="voltimeter_mega328.hex" Show_id="true" Mhz="16"/>

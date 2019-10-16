@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Fixed Volt.-7: 
 <item x="-460" vflip="1" id="Fixed Volt.-7" hflip="1" labelrot="0" valLabRot="0" valLabelx="-60" Show_Volt="true" Voltage="5" Show_id="false" Unit=" V" y="-124" labely="-24" itemtype="Fixed Voltage" labelx="-64" objectName="Fixed Volt.-7" valLabely="-12" rotation="0"/>

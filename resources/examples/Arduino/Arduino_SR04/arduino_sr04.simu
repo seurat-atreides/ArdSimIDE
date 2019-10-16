@@ -1,4 +1,4 @@
-<circuit noLinAcc="5" animate="0" speed="1000000" noLinStep="10" type="simulide_0.1" reactStep="50">
+<circuit noLinAcc="5" animate="0" speed="1000000" noLinStep="10" type="qtardusim_0.1" reactStep="50">
  
 Voltage Source-4: 
 <item Show_id="false" id="Voltage Source-4" itemtype="Voltage Source" Voltage="5" Unit=" V" valLabRot="0" Show_Volt="true" labely="-24" x="-476" y="-268" hflip="1" objectName="Voltage Source-4" labelrot="0" rotation="0" valLabelx="-26" valLabely="10" labelx="-16" vflip="1"/>

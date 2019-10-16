@@ -1,4 +1,4 @@
-<circuit noLinStep="10" reactStep="50" animate="0" noLinAcc="5" speed="1000000" type="simulide_0.1">
+<circuit noLinStep="10" reactStep="50" animate="0" noLinAcc="5" speed="1000000" type="qtardusim_0.1">
  
 LedMatrix-5: 
 <item id="LedMatrix-5" itemtype="LedMatrix" Show_id="false" Rows="8" valLabRot="0" rotation="0" valLabely="0" objectName="LedMatrix-5" valLabelx="0" Cols="8" y="-396" labely="-24" x="-412" MaxCurrent="0.0050000000000000001" hflip="1" labelx="-16" Threshold="2.3999999999999999" labelrot="0" Resistance="0.59999999999999998" vflip="1" Color="0" Vertical_Pins="false"/>

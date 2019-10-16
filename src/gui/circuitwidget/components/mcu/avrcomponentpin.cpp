@@ -82,10 +82,6 @@ void AVRComponentPin::attach( avr_t*  AvrProcessor )
         //qDebug()  << m_port << m_pinN;
         
         m_Write_stat_irq = avr_io_getirq( AvrProcessor, AVR_IOCTL_IOPORT_GETIRQ(m_port), m_pinN );
-        /*m_Write_stat_irq = avr_alloc_irq(&AvrProcessor->irq_pool, 0, 1, NULL);
-        avr_connect_irq(
-                m_Write_stat_irq,
-                avr_io_getirq(AvrProcessor, AVR_IOCTL_IOPORT_GETIRQ(m_port), m_pinN));*/
         
         if( m_type.startsWith("adc") ) 
         {
@@ -125,7 +121,7 @@ void AVRComponentPin::attach( avr_t*  AvrProcessor )
 
 void AVRComponentPin::resetState() 
 {
-    if( m_pinType == 1 )                         // Initialize irq flags
+    if( m_pinType == 1 ) // Initialize irq flags
     {
         if( m_PortRegChangeIrq && m_DdrRegChangeIrq ) 
         {
@@ -146,7 +142,7 @@ void AVRComponentPin::setVChanged()
     float volt = m_ePin[0]->getVolt();
 
     //qDebug() << m_id << m_type << volt;
-    if( m_pinType == 1 )                                 // Is an IO Pin
+    if( m_pinType == 1 ) // Is an IO Pin
     {
         if( volt  > 2.5 ) avr_raise_irq(m_Write_stat_irq, 1);
         else              avr_raise_irq(m_Write_stat_irq, 0);
@@ -184,7 +180,6 @@ void AVRComponentPin::setPullup( uint32_t value )
     }
     
     m_ePin[0]->stampCurrent( m_voltOut/m_imp );
-    //if( m_ePin[0]->getEnode()->needFastUpdate() ) 
     {
         Simulator::self()->runExtraStep();
     }
@@ -193,8 +188,6 @@ void AVRComponentPin::setPullup( uint32_t value )
 void AVRComponentPin::set_pinVoltage( uint32_t value )
 {
     if( m_isInput ) return;
-    
-    //if( m_isInput ) setPullup( value>0 ); // Activate pullup when port is written while input
 
     if( value > 0 ) m_voltOut = m_voltHigh;
     else            m_voltOut = m_voltLow;
@@ -205,8 +198,6 @@ void AVRComponentPin::set_pinVoltage( uint32_t value )
     
     eSource::setOut( value > 0 );
     eSource::stampOutput();
-    //m_ePin[0]->stampCurrent( m_voltOut/m_imp ); // Save some calls
-    //if( m_ePin[0]->getEnode()->needFastUpdate() ) 
     {
         Simulator::self()->runExtraStep();
     }
@@ -216,14 +207,14 @@ void AVRComponentPin::set_pinImpedance( uint32_t value )
 {
     //qDebug() << "Port" << m_port << m_id << "   salida: " << (value > 0 );
     
-    if( value > 0 )                         // Pis is Output
+    if( value > 0 ) // Pis is Output
     {
         m_isInput = false;
         eSource::setImp( 40 );
         if( m_ePin[0]->isConnected() && m_attached )
             m_ePin[0]->getEnode()->remFromChangedFast(this);
     }
-    else                                                 // Pin is Input
+    else // Pin is Input
     {
         m_isInput = true;
         eSource::setImp( high_imp );

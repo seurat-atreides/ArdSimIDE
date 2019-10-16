@@ -44,9 +44,7 @@ class MAINMODULE_EXPORT Simulator : public QObject
         void pauseSim();
         void resumeSim();
         void stopSim();
-        void stopDebug();
         void startSim();
-        void debug();
         void runCircuitStep();
         void runGraphicStep();
         void runExtraStep();
@@ -108,9 +106,6 @@ class MAINMODULE_EXPORT Simulator : public QObject
         
         uint64_t stepsPerSec;
 
-    signals:
-        void pauseDebug();
-        void resumeDebug();
         
     private:
  static Simulator* m_pSelf;
@@ -137,7 +132,6 @@ class MAINMODULE_EXPORT Simulator : public QObject
         QList<BaseProcessor*> m_mcuList;
 
         bool m_isrunning;
-        bool m_debugging;
         bool m_paused;
         bool m_error;
         int  m_timerId;

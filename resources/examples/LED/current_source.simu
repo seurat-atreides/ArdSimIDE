@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Current Source-4: 
 <item Current="30" Unit=" mA" y="-300" valLabelx="-34" id="Current Source" rotation="0" valLabRot="0" objectName="Current Source-4" itemtype="Current Source" labelrot="0" x="-428" hflip="1" labelx="-56" Show_id="true" vflip="1" valLabely="19" Show_Amp="true" labely="-80"/>

@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Text-34: 
 <item Show_id="false" id="Text-34" labelrot="0" rotation="0" Text="0-10 Counter.&#xa;&#xa;Turn On Clock to Start Counter.&#xa;&#xa;Reset:&#xa;Resets Counter to 0." vflip="1" Fixed_Width="true" Border="1" valLabRot="0" objectName="Text-34" x="-436" itemtype="TextComponent" y="-444" Margin="5" valLabelx="0" labely="-24" labelx="-16" valLabely="0" hflip="1" Font_Size="0"/>

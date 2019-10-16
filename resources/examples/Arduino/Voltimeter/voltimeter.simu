@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Arduino Uno-11: 
 <item labelrot="0" valLabelx="0" y="-172" valLabely="0" id="Arduino Uno" Show_id="true" hflip="1" labely="-15" itemtype="Arduino" program="voltimeter.hex" objectName="Arduino Uno-11" labelx="51" Mhz="16" x="-228" vflip="1" rotation="0" valLabRot="0"/>

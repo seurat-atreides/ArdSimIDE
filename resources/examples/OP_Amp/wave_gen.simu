@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Node-198: 
 <item labely="-24" vflip="1" valLabRot="0" itemtype="Node" id="Node-198" objectName="Node-198" x="-148" hflip="1" y="-132" valLabelx="0" rotation="0" labelrot="0" valLabely="0" labelx="-16" Show_id="false"/>

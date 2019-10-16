@@ -76,26 +76,19 @@ class MAINMODULE_EXPORT McuComponent : public Chip
         void contextMenu( QGraphicsSceneContextMenuEvent* event, QMenu* menu );
         
     protected:
- static McuComponent* m_pSelf;
- static bool m_canCreate;
-        
+        static McuComponent* m_pSelf;
+        static bool m_canCreate;
         virtual void contextMenuEvent(QGraphicsSceneContextMenuEvent* event);
-
         virtual void addPin( QString id, QString type, QString label, int pos, int xpos, int ypos, int angle )=0;
         virtual void attachPins()=0;
-
         BaseProcessor* m_processor;
-
         double m_freq;           // Clock Frequency Mhz
-        
         bool m_attached;
         bool m_serPort;
         bool m_serMon;
-
         QString m_device;       // Name of device
         QString m_symbolFile;   // firmware file loaded
         QString m_lastFirmDir;  // Last firmware folder used
-        
         QList<McuComponentPin*> m_pinList;
 };
 #endif

@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 atmega328-6: 
 <item labely="-17" vflip="1" valLabRot="0" itemtype="AVR" id="atmega328" objectName="atmega328-6" x="-340" hflip="1" y="-188" valLabelx="0" rotation="0" labelrot="0" valLabely="0" labelx="-15" program="Interrupt_LED_PWM_Timer2_mega328p.hex" Show_id="true" Mhz="16"/>

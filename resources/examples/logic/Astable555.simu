@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Buffer-23: 
 <item labelx="-16" Input_Imped="100000000000000" Show_id="false" Tristate="false" valLabely="0" valLabRot="0" y="-420" vflip="1" x="-508" itemtype="Buffer" objectName="Buffer-23" Out_High_V="5" labelrot="0" id="Buffer-23" hflip="1" Inverted="true" labely="-24" Input_High_V="2.5" rotation="-270" Out_Low_V="0" Out_Imped="40" Input_Low_V="2.5" valLabelx="0"/>

@@ -61,7 +61,6 @@ void eLed::updateVI()
     m_lastCurrent = m_current;
 
     //qDebug()<<"current"<< m_current<<m_lastCurrent<<period<< m_lastUpdatePeriod <<m_avg_brightness;
-    //label->setText( QString("%1 A"). arg(double(int(m_current*1000))/1000) );
 }
 
 void eLed::updateBright()

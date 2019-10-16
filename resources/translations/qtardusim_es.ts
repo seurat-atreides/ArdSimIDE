@@ -1,158 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.1" language="es_ES">
 <context>
     <name>ADC</name>
     <message>
         <source>ADC</source>
-        <translation>АЦП</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Other Logic</source>
-        <translation>Логика/Другое (Логика)</translation>
+        <translation>Logica/Otros (Logica)</translation>
     </message>
 </context>
 <context>
     <name>AVRComponent</name>
+    <message>
+        <source>Only 1 Mcu allowed
+ to be in the Circuit.</source>
+        <translation>Solo puede haber
+1 Microcontrolador en el Circuito.</translation>
+    </message>
     <message>
         <source>AVR</source>
         <translation>AVR</translation>
     </message>
     <message>
         <source>Micro</source>
-        <translation>Микроконтроллеры</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Ошибка</translation>
-    </message>
-    <message>
-        <source>Only 1 Mcu allowed
- to be in the Circuit.</source>
-        <translation>Может быть использован
-только 1 микроконтроллер.</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>AVRComponentPin</name>
     <message>
         <source>Register descriptor file for this AVR processor %1 is corrupted - cannot attach pin</source>
-        <translation>Регистр файла дескриптора для этого AVR микроконтроллера %1 повреждён - не могу назначить вывод</translation>
+        <translation>Archivo de registros del procesador %1 no valido - No se puede configurar pin</translation>
     </message>
     <message>
         <source>Register descriptor file for this AVR processor %1 is corrupted - cannot attach pin 
 </source>
-        <translation>Регистр файла дескриптора для этого AVR микроконтроллера %1 повреждён - не могу назначить вывод 
-</translation>
+        <translation>Archivo de registros del procesador %1 no valido - No se puede configurar pin</translation>
     </message>
     <message>
         <source>Pin is not initialized properly:</source>
-        <translation>Вывод не инициализирован:</translation>
+        <translation>Inicializacion incorrecta del Pin:</translation>
     </message>
 </context>
 <context>
     <name>Amperimeter</name>
     <message>
         <source>Amperimeter</source>
-        <translation>Амперметр</translation>
+        <translation>Amperimetro</translation>
     </message>
     <message>
         <source>Meters</source>
-        <translation>Измерение</translation>
+        <translation>Medida</translation>
     </message>
 </context>
 <context>
     <name>AndGate</name>
     <message>
         <source>And Gate</source>
-        <translation>И</translation>
+        <translation>Puerta And</translation>
     </message>
     <message>
         <source>Logic/Gates</source>
-        <translation>Логика/ворота</translation>
+        <translation>Logica/Puertas</translation>
     </message>
 </context>
 <context>
     <name>App::Property</name>
     <message>
         <source>id</source>
-        <translation>Идентификатор</translation>
+        <translation>id</translation>
     </message>
     <message>
         <source>Show id</source>
-        <translation>Показать идентификатор</translation>
+        <translation>Mostrar id</translation>
     </message>
     <message>
         <source>Unit</source>
-        <translation>Единица измерения</translation>
+        <translation>Unidades</translation>
     </message>
     <message>
         <source>Color</source>
-        <translation>Цвет</translation>
+        <translation>Color</translation>
     </message>
     <message>
         <source>Speed</source>
-        <translation>Скорость</translation>
+        <translation>Velocidad</translation>
     </message>
     <message>
         <source>ReactStep</source>
-        <translation>Шаг отклика</translation>
+        <translation>Paso React.</translation>
     </message>
     <message>
         <source>NoLinStep</source>
-        <translation>Шаг NoLin</translation>
+        <translation>Paso No Lin.</translation>
     </message>
     <message>
         <source>NoLinAcc</source>
-        <translation>Накопление NoLin</translation>
+        <translation>Precision No Lin.</translation>
     </message>
     <message>
         <source>Draw Grid</source>
-        <translation>Отобразить сетку</translation>
+        <translation>Mostrar Rejilla</translation>
     </message>
     <message>
         <source>Show ScrollBars</source>
-        <translation>Показать полосы прокрутки</translation>
+        <translation>Mostrar ScrollBars</translation>
     </message>
     <message>
         <source>H size</source>
-        <translation>Размер по горизонтали</translation>
+        <translation>Tamaño Horiz.</translation>
     </message>
     <message>
         <source>V size</source>
-        <translation>Размер по вертикали</translation>
+        <translation>Tamaño Vert.</translation>
     </message>
     <message>
         <source>Border</source>
-        <translation>Кайма</translation>
+        <translation>Borde</translation>
     </message>
     <message>
         <source>Opacity</source>
-        <translation>Непрозрачность</translation>
+        <translation>Opacidad</translation>
     </message>
     <message>
         <source>Z Value</source>
-        <translation>Значение Z</translation>
+        <translation>Valor Z</translation>
     </message>
     <message>
         <source>Vref</source>
-        <translation>Опорное напряжение</translation>
+        <translation>Vref</translation>
     </message>
     <message>
         <source>Num Bits</source>
-        <translation>Номер бита</translation>
+        <translation>Mun Bits</translation>
     </message>
     <message>
         <source>Impedance</source>
-        <translation>Импеданс</translation>
+        <translation>Impedancia</translation>
     </message>
     <message>
         <source>Max Value</source>
-        <translation>Максимальное значение</translation>
+        <translation>Valor Max.</translation>
     </message>
     <message>
         <source>Gain</source>
-        <translation>Усиление</translation>
+        <translation>Ganancia</translation>
     </message>
     <message>
         <source>PNP</source>
@@ -160,482 +159,482 @@
     </message>
     <message>
         <source>Capacitance</source>
-        <translation>Ёмкость</translation>
+        <translation>Capacidad</translation>
     </message>
     <message>
         <source>Show_Cap</source>
-        <translation>Показать конденсатор</translation>
+        <translation>Mostrar Cap.</translation>
     </message>
     <message>
         <source>Freq</source>
-        <translation>Частота</translation>
+        <translation>Freq.</translation>
     </message>
     <message>
         <source>Current</source>
-        <translation>Ток</translation>
+        <translation>Corriente</translation>
     </message>
     <message>
         <source>Show Amp</source>
-        <translation>Показать усилитель</translation>
+        <translation>Mostrar Amp.</translation>
     </message>
     <message>
         <source>Threshold</source>
-        <translation>Порог</translation>
+        <translation>Umbral</translation>
     </message>
     <message>
         <source>Zener Volt</source>
-        <translation>Напряжение стабилизации</translation>
+        <translation>Volt. Zener</translation>
     </message>
     <message>
         <source>Cols</source>
-        <translation>Столбцы</translation>
+        <translation>Columnas</translation>
     </message>
     <message>
         <source>Rows</source>
-        <translation>Строки</translation>
+        <translation>Filas</translation>
     </message>
     <message>
         <source>Control Code</source>
-        <translation>Контрольный код</translation>
+        <translation>Codigo Control</translation>
     </message>
     <message>
         <source>Size bytes</source>
-        <translation>Размер байтов</translation>
+        <translation>Tamaño Bytes</translation>
     </message>
     <message>
         <source>Inductance</source>
-        <translation>Индуктивность</translation>
+        <translation>Inductancia</translation>
     </message>
     <message>
         <source>Show Ind</source>
-        <translation>Показать индуктивность</translation>
+        <translation>Mostrar Inductancia</translation>
     </message>
     <message>
         <source>Key Labels</source>
-        <translation>Ключевые метки</translation>
+        <translation>Texto en Teclas</translation>
     </message>
     <message>
         <source>CS Active Low</source>
-        <translation>CS активный низкий</translation>
+        <translation>DS Activo Bajo</translation>
     </message>
     <message>
         <source>MaxCurrent</source>
-        <translation>Максимальный ток</translation>
+        <translation>Corriente Max.</translation>
     </message>
     <message>
         <source>Grounded</source>
-        <translation>Заземленный</translation>
+        <translation>A Tierra</translation>
     </message>
     <message>
         <source>Input High V</source>
-        <translation>Высокое входящее напряжение</translation>
+        <translation>Volt. Alto Entrada</translation>
     </message>
     <message>
         <source>Input Low V</source>
-        <translation>Низкое входящее напряжение</translation>
+        <translation>Volt. Bajo Entrada</translation>
     </message>
     <message>
         <source>Input Imped</source>
-        <translation>Входящий импеданс</translation>
+        <translation>Impedancia Entrada</translation>
     </message>
     <message>
         <source>Out High V</source>
-        <translation>Высокое выходящее напряжение</translation>
+        <translation>Volt. Alto Salida</translation>
     </message>
     <message>
         <source>Out Low V</source>
-        <translation>Низкое выходящее напряжение</translation>
+        <translation>Volt. Bajo Salida</translation>
     </message>
     <message>
         <source>Out Imped</source>
-        <translation>Выходящий импеданс</translation>
+        <translation>Impedancia Salida</translation>
     </message>
     <message>
         <source>Inverted</source>
-        <translation>Инвертированный</translation>
+        <translation>Invertido</translation>
     </message>
     <message>
         <source>Tristate</source>
-        <translation>Третье состояние</translation>
+        <translation>Tri-Estado</translation>
     </message>
     <message>
         <source>Clock Inverted</source>
-        <translation>Инвертировать такты</translation>
+        <translation>Reloj Invertido</translation>
     </message>
     <message>
         <source>Reset Inverted</source>
-        <translation>Инвертировать сброс</translation>
+        <translation>Reset Invertido</translation>
     </message>
     <message>
         <source>Invert Inputs</source>
-        <translation>Инвертировать входы</translation>
+        <translation>Invertir Entradas</translation>
     </message>
     <message>
         <source>S R Inverted</source>
-        <translation>Инвертировать SR</translation>
+        <translation>R S Invertidos</translation>
     </message>
     <message>
         <source>Num Inputs</source>
-        <translation>Количество входов</translation>
+        <translation>Num. Entradas</translation>
     </message>
     <message>
         <source>Channels</source>
-        <translation>Каналы</translation>
+        <translation>Canales</translation>
     </message>
     <message>
         <source>Voltage</source>
-        <translation>Напряжение</translation>
+        <translation>Voltaje</translation>
     </message>
     <message>
         <source>Show Volt</source>
-        <translation>Показать в вольтах</translation>
+        <translation>Mostrar Voltaje</translation>
     </message>
     <message>
         <source>RDSon</source>
-        <translation>RD потомок</translation>
+        <translation>RDSon</translation>
     </message>
     <message>
         <source>P Channel</source>
-        <translation>Канал P</translation>
+        <translation>Canal P</translation>
     </message>
     <message>
         <source>Depletion</source>
-        <translation>Истощение</translation>
+        <translation>Deplexion</translation>
     </message>
     <message>
         <source>Power Pins</source>
-        <translation>Силовые контакты</translation>
+        <translation>Pines de Alimentacion</translation>
     </message>
     <message>
         <source>Filter</source>
-        <translation>Фильтр</translation>
+        <translation>Filtro</translation>
     </message>
     <message>
         <source>Value Ohm</source>
-        <translation>Значение Ом</translation>
+        <translation>Valor Ohmios</translation>
     </message>
     <message>
         <source>PlotterCh</source>
-        <translation>Графопостроитель Канал</translation>
+        <translation>Canal Plotter</translation>
     </message>
     <message>
         <source>Rcoil</source>
-        <translation>Сопротивление обмотки</translation>
+        <translation>Res. Bobina</translation>
     </message>
     <message>
         <source>Itrig</source>
-        <translation>Триггер</translation>
+        <translation>Int. Disparo</translation>
     </message>
     <message>
         <source>Poles</source>
-        <translation>Полюса</translation>
+        <translation>Polos</translation>
     </message>
     <message>
         <source>DT</source>
-        <translation>ДатаВремя</translation>
+        <translation>DT</translation>
     </message>
     <message>
         <source>Norm Close</source>
-        <translation>Закрыть нормально</translation>
+        <translation>Norm. Cerrado</translation>
     </message>
     <message>
         <source>Resistance</source>
-        <translation>Сопротивление</translation>
+        <translation>Resistencia</translation>
     </message>
     <message>
         <source>Show res</source>
-        <translation>Показать сопротивление</translation>
+        <translation>Mostrar Resistencia</translation>
     </message>
     <message>
         <source>NumDisplays</source>
-        <translation>Количество отображений</translation>
+        <translation>Num. Pantallas</translation>
     </message>
     <message>
         <source>CommonCathode</source>
-        <translation>Общий катод</translation>
+        <translation>Catodo comun</translation>
     </message>
     <message>
         <source>Steps</source>
-        <translation>Шаги</translation>
+        <translation>Pasos</translation>
     </message>
     <message>
         <source>Text</source>
-        <translation>Текст</translation>
+        <translation>Texto</translation>
     </message>
     <message>
         <source>Fixed Width</source>
-        <translation>Фиксированная ширина</translation>
+        <translation>Ancho Fijo</translation>
     </message>
     <message>
         <source>Margin</source>
-        <translation>Допустимый предел</translation>
+        <translation>Margen</translation>
     </message>
     <message>
         <source>Volts</source>
-        <translation>Вольты</translation>
+        <translation>Voltaje</translation>
     </message>
     <message>
         <source>Volt Base</source>
-        <translation>Базовое напряжение</translation>
+        <translation>Volt. Base</translation>
     </message>
     <message>
         <source>Duty Square</source>
-        <translation>Обязательное поле</translation>
+        <translation>Ancho de Pulso Onda Cuadrada</translation>
     </message>
     <message>
         <source>Quality</source>
-        <translation>Качество</translation>
+        <translation>Calidad</translation>
     </message>
     <message>
         <source>Wave Type</source>
-        <translation>Тип волны</translation>
-    </message>
-    <message>
-        <source>Drive Circuit</source>
-        <translation>Управляющая схема</translation>
-    </message>
-    <message>
-        <source>Compiler Path</source>
-        <translation>Путь к компилятору</translation>
-    </message>
-    <message>
-        <source>Font Size</source>
-        <translation>Размер шрифта</translation>
-    </message>
-    <message>
-        <source>Tab Size</source>
-        <translation>Шаг табуляции</translation>
-    </message>
-    <message>
-        <source>Spaces Tabs</source>
-        <translation>Интервалы вкладок</translation>
-    </message>
-    <message>
-        <source>Show Spaces</source>
-        <translation>Показать интервалы</translation>
-    </message>
-    <message>
-        <source>Board</source>
-        <translation>Плата</translation>
-    </message>
-    <message>
-        <source>Custom Board</source>
-        <translation>Заказать плату</translation>
-    </message>
-    <message>
-        <source>Program</source>
-        <translation>Программа</translation>
+        <translation>Tipo de Onda</translation>
     </message>
     <message>
         <source>Avra Inc Path</source>
-        <translation type="unfinished">Путь к Avra</translation>
+        <translation>Ruta Avra Includes</translation>
+    </message>
+    <message>
+        <source>Drive Circuit</source>
+        <translation>Controlar Circuito</translation>
+    </message>
+    <message>
+        <source>Compiler Path</source>
+        <translation>Ruta Compilador</translation>
+    </message>
+    <message>
+        <source>Font Size</source>
+        <translation>Tamaño Texto</translation>
+    </message>
+    <message>
+        <source>Tab Size</source>
+        <translation>Tamaño Tab</translation>
+    </message>
+    <message>
+        <source>Spaces Tabs</source>
+        <translation>Tabs de Espacios</translation>
+    </message>
+    <message>
+        <source>Show Spaces</source>
+        <translation>Mostar Espacios</translation>
+    </message>
+    <message>
+        <source>Board</source>
+        <translation>Placa</translation>
+    </message>
+    <message>
+        <source>Custom Board</source>
+        <translation>Placa &quot;Custom&quot;</translation>
+    </message>
+    <message>
+        <source>Program</source>
+        <translation>Programa</translation>
     </message>
     <message>
         <source>Num Outputs</source>
-        <translation>Количество Выходы</translation>
+        <translation>Num Salidas</translation>
     </message>
     <message>
         <source>Functions</source>
-        <translation type="unfinished">методы</translation>
+        <translation>Funciones</translation>
     </message>
     <message>
         <source>Width</source>
-        <translation type="unfinished">ширина</translation>
+        <translation>Ancho</translation>
     </message>
     <message>
         <source>Height</source>
-        <translation type="unfinished">высота</translation>
+        <translation>Alto</translation>
     </message>
 </context>
 <context>
     <name>Arduino</name>
+    <message>
+        <source>Only 1 Mcu allowed
+ to be in the Circuit.</source>
+        <translation>Solo puede haber
+1 Microcontrolador en el Circuito.</translation>
+    </message>
     <message>
         <source>Arduino</source>
         <translation>Arduino</translation>
     </message>
     <message>
         <source>Micro</source>
-        <translation>Микроконтроллеры</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Ошибка</translation>
-    </message>
-    <message>
-        <source>Only 1 Mcu allowed
- to be in the Circuit.</source>
-        <translation>Может быть использован
-только 1 микроконтроллер.</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>AudioOut</name>
     <message>
         <source>Audio Out</source>
-        <translation>Звуковой выход</translation>
+        <translation>Salida Audio</translation>
     </message>
     <message>
         <source>Outputs</source>
-        <translation>Выходы</translation>
+        <translation>Salidas</translation>
     </message>
 </context>
 <context>
     <name>AvrProcessor</name>
     <message>
         <source>File Not Found</source>
-        <translation>Файл не найден</translation>
+        <translation>Archivo No Encontrado</translation>
     </message>
     <message>
         <source>The file &quot;%1&quot; was not found.</source>
-        <translation>Файл &quot;%1&quot; не был найден.</translation>
-    </message>
-    <message>
-        <source>Error:</source>
-        <translation>Ошибка:</translation>
+        <translation>No se encontro el archivo: &quot;%1&quot;</translation>
     </message>
     <message>
         <source> Unable to load IHEX file %1
 </source>
-        <translation> Невозможно загрузить IHEX файл %1
+        <translation>Imposible cargar el archivo IHEX %1
 </translation>
     </message>
     <message>
         <source>Failed to load firmware: </source>
-        <translation>Не удалось загрузить прошивку: </translation>
+        <translation>No se pudo cargar el fimware: </translation>
     </message>
     <message>
         <source>File %1 is not in valid ELF format
 </source>
-        <translation>У файла %1 не действительный ELF формат
+        <translation>El archivo %1 ino esta en formato ELF valido
 </translation>
+    </message>
+    <message>
+        <source>Unkown Error:</source>
+        <translation>Error no Especificado:</translation>
+    </message>
+    <message>
+        <source>Could not Create AVR Processor: &quot;%1&quot;</source>
+        <translation>No se pudo crear AVR Processor para: &quot;%1&quot;</translation>
+    </message>
+    <message>
+        <source>Wrong firmware!!</source>
+        <translation>Firmware No Valido!!</translation>
     </message>
     <message>
         <source>%1 should be .hex or .elf
 </source>
-        <translation>%1 должен быть .hex или .elf
+        <translation>%1 deberia ser .hex o .elf
 </translation>
     </message>
     <message>
         <source>Warning on load firmware: </source>
-        <translation>Предупреждение о загрузке прошивки: </translation>
+        <translation>Aviso Cragando Firmware:</translation>
     </message>
     <message>
         <source>Incompatible firmware: compiled for %1 and your processor is %2
 </source>
-        <translation>Несовместимая прошивка: скомпилировано для %1 и микроконтроллера %2
+        <translation>Firmware Incompatible: compilado para%1 y su procesador es %2
 </translation>
     </message>
     <message>
         <source>The processor model is not specified.
 </source>
-        <translation>Не указана модель микроконтроллера.
+        <translation>Modelo de procesador no especificado.
 </translation>
     </message>
     <message>
-        <source>Unkown Error:</source>
-        <translation>Неизвестная ошибка:</translation>
-    </message>
-    <message>
-        <source>Could not Create AVR Processor: &quot;%1&quot;</source>
-        <translation>Не удалось создать AVR микроконтроллер: &quot;%1&quot;</translation>
-    </message>
-    <message>
-        <source>Wrong firmware!!</source>
-        <translation>Неправильная прошивка!</translation>
+        <source>Error:</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>BJT</name>
     <message>
-        <source>BJT</source>
-        <translation>Биполярный транзистор</translation>
+        <source>Active</source>
+        <translation>Activos</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Активные элементы</translation>
+        <source>BJT</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>BaseDebugger</name>
     <message>
         <source>Debugger already running</source>
-        <translation>Отладчик уже работает</translation>
+        <translation>Depurador iniciado</translation>
     </message>
     <message>
         <source>Stop active session</source>
-        <translation>Остановка активной сессии</translation>
+        <translation>Detenga la sesion primero</translation>
     </message>
     <message>
         <source>Uploading: </source>
-        <translation>Загрузка: </translation>
+        <translation>Cargando: </translation>
     </message>
     <message>
         <source>FirmWare Uploaded to </source>
-        <translation>Прошивка загружена в </translation>
+        <translation>FirmWare Cargado en </translation>
     </message>
     <message>
         <source>Select Compiler toolchain directory</source>
-        <translation>Выберите каталог с инструментами компилятора</translation>
+        <translation>Seleccione directorio del Compilador</translation>
     </message>
     <message>
         <source>Using Compiler Path: </source>
-        <translation>Используется путь компилятора: </translation>
+        <translation>Usando Ruta de Compilador: </translation>
     </message>
     <message>
         <source>: ToolChain not found</source>
-        <translation>: Инструменты не найдены</translation>
+        <translation>: Compilador no encontrado</translation>
     </message>
     <message>
         <source>Right-Click on Document Tab to set Path</source>
-        <translation>Правый клик на вкладке документа, чтобы задать путь</translation>
+        <translation>Click-Derecho en pestaña de Documento para elegir Ruta</translation>
     </message>
     <message>
         <source>Error: No Mcu in Simulator... </source>
-        <translation type="unfinished">Ошибка: нет микроконтроллера в симуляторе... </translation>
+        <translation type="unfinished">Error: No hay Mcu en el simulador... </translation>
     </message>
 </context>
 <context>
     <name>BcdTo7S</name>
     <message>
         <source>Bcd To 7S.</source>
-        <translation>7-сегментный Шифратор</translation>
+        <translation>Bcd a 7S</translation>
     </message>
     <message>
         <source>Logic/Converters</source>
-        <translation>Логика/конвертер</translation>
+        <translation>Logica/Conversores</translation>
     </message>
 </context>
 <context>
     <name>BcdToDec</name>
     <message>
         <source>Bcd To Dec.</source>
-        <translation>Дешифратор.</translation>
+        <translation>Bcd a Dec.</translation>
     </message>
     <message>
         <source>Logic/Converters</source>
-        <translation>Логика/конвертер</translation>
+        <translation>Logica/Conversores</translation>
     </message>
 </context>
 <context>
     <name>BinCounter</name>
     <message>
         <source>Counter</source>
-        <translation>Счётчик</translation>
+        <translation>Contador</translation>
     </message>
     <message>
         <source>Logic/Arithmetic</source>
-        <translation>Логика/арифметика</translation>
+        <translation>Logica/Aritmetica</translation>
     </message>
 </context>
 <context>
     <name>Buffer</name>
     <message>
         <source>Buffer</source>
-        <translation>Буфер</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Gates</source>
-        <translation>Логика/ворота</translation>
+        <translation>Logica/Puertas</translation>
     </message>
 </context>
 <context>
@@ -646,18 +645,18 @@
     </message>
     <message>
         <source>Logic/Other Logic</source>
-        <translation>Логика/Другое (Логика)</translation>
+        <translation>Logica/Otros (Logica)</translation>
     </message>
 </context>
 <context>
     <name>Capacitor</name>
     <message>
         <source>Capacitor</source>
-        <translation>Конденсатор</translation>
+        <translation>Condensador</translation>
     </message>
     <message>
         <source>Passive</source>
-        <translation>Пассивные элементы</translation>
+        <translation>Pasivos</translation>
     </message>
 </context>
 <context>
@@ -666,7 +665,7 @@
         <source>Cannot read file:
 %1:
 %2.</source>
-        <translation>Не удаётся прочитать файл:
+        <translation>No se pudo leer el archivo:
 %1:
 %2.</translation>
     </message>
@@ -674,164 +673,164 @@
         <source>Cannot set file:
 %1
 to DomDocument</source>
-        <translation>Не удаётся загрузить файл:
+        <translation>No se pudo convertir el archivo:
 %1
-в DOMDocument</translation>
+a DomDocument</translation>
     </message>
     <message>
         <source>Error reading Chip file:
 %1
 No valid Chip</source>
-        <translation>Ошибка чтения файла чип:
+        <translation>Error leyendo Archivo:
 %1
-чип не действительный</translation>
+Chip no Valido</translation>
     </message>
 </context>
 <context>
     <name>Circuit</name>
     <message>
         <source>Load Circuit</source>
-        <translation>Загрузить схему</translation>
+        <translation>Abrir Circuito</translation>
     </message>
     <message>
         <source>Circuits (*.simu);;All files (*.*)</source>
-        <translation>Схемы (*.simu);;Все файлы (*.*)</translation>
+        <translation>Circuitos (*.simu);;Todos (*.*)</translation>
     </message>
     <message>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Не удаётся прочитать файл %1:
+        <translation>No se pudo leer el archivo %1:
 %2.</translation>
     </message>
     <message>
         <source>Cannot set file %1
 to DomDocument</source>
-        <translation>Не удаётся загрузить файл %1
-в DOMDocument</translation>
+        <translation>No se pudo convertir el archivo %1
+a DomDocument</translation>
+    </message>
+    <message>
+        <source>Bill Of Materials</source>
+        <translation>Lista de Materiales</translation>
     </message>
     <message>
         <source>Cannot write file %1:
 %2.</source>
-        <translation>Не удаётся записать файл %1:
+        <translation>No se pudo escribir el archivo %1:
 %2.</translation>
     </message>
     <message>
-        <source>Bill Of Materials</source>
-        <translation>Спецификация материалов</translation>
-    </message>
-    <message>
         <source>Create Subcircuit</source>
-        <translation>Создать подсхему</translation>
+        <translation>Crear Subcircuito</translation>
     </message>
 </context>
 <context>
     <name>CircuitView</name>
     <message>
         <source>Paste</source>
-        <translation>Вставить</translation>
+        <translation>Pegar</translation>
     </message>
     <message>
         <source>Undo</source>
-        <translation>Отмена действия</translation>
+        <translation>Deshacer</translation>
     </message>
     <message>
         <source>Redo</source>
-        <translation>Выполнить повторно</translation>
+        <translation>Rehacer</translation>
     </message>
     <message>
         <source>Open Circuit</source>
-        <translation type="vanished">Открыть схему</translation>
+        <translation type="vanished">Abrir Circuito</translation>
     </message>
     <message>
         <source>New Circuit</source>
-        <translation type="vanished">Новая схема</translation>
+        <translation type="vanished">Nuevo Circuito</translation>
     </message>
     <message>
         <source>Save Circuit</source>
-        <translation type="vanished">Сохранить схему</translation>
+        <translation type="vanished">Guardar circuito</translation>
     </message>
     <message>
         <source>Save Circuit As...</source>
-        <translation type="vanished">Сохранить схему как...</translation>
+        <translation type="vanished">Guardar Circuito Como...</translation>
     </message>
     <message>
         <source>Import Circuit</source>
-        <translation>Импортировать схему</translation>
+        <translation>Importar Circuito</translation>
     </message>
     <message>
         <source>Save Circuit as Image</source>
-        <translation>Сохранить схему как изображение</translation>
+        <translation>Grabar Circuito como Imagen</translation>
     </message>
     <message>
         <source>Create SubCircuit</source>
-        <translation>Создать подсхему</translation>
+        <translation>Crear Subcircuito</translation>
     </message>
     <message>
         <source>Bill of Materials</source>
-        <translation>Спецификация материалов</translation>
+        <translation>Lista de Materiales</translation>
     </message>
     <message>
         <source>Save as Image</source>
-        <translation>Сохранить как изображение</translation>
+        <translation>Grabar Como Imagen</translation>
     </message>
     <message>
         <source>Circuit Name</source>
-        <translation>Название схемы</translation>
+        <translation>Nombre del Circuito</translation>
     </message>
     <message>
-        <source>Generated by SimulIDE</source>
-        <translation>Сгенерировано с помощью SimulIDE</translation>
+        <source>Generated by QtArduSim</source>
+        <translation>Generado por QtArduSim</translation>
     </message>
     <message>
         <source>Time: </source>
-        <translation>Bремя: </translation>
+        <translation>Tiempo: </translation>
     </message>
 </context>
 <context>
     <name>CircuitWidget</name>
     <message>
         <source>New C&amp;ircuit	Ctrl+N</source>
-        <translation>Новая с&amp;хема	Ctrl+N</translation>
+        <translation>Nuevo Circuito	Ctrl+N</translation>
     </message>
     <message>
         <source>Create a new Circuit</source>
-        <translation>Создать новую схему</translation>
+        <translation>Crear Nuevo Circuito</translation>
     </message>
     <message>
         <source>&amp;Open Circuit	Ctrl+O</source>
-        <translation>&amp;Открыть схему	Ctrl+O</translation>
+        <translation>Abrir Circuito	Ctrl+O</translation>
     </message>
     <message>
         <source>Open an existing Circuit</source>
-        <translation>Открыть существующую схему</translation>
+        <translation>Abrir un Circuito existente</translation>
     </message>
     <message>
         <source>&amp;Save Circuit	Ctrl+S</source>
-        <translation>&amp;Сохранить схему	Ctrl+S</translation>
+        <translation>Guardar Circuito	Ctrl+S</translation>
     </message>
     <message>
         <source>Save the Circuit to disk</source>
-        <translation>Сохранить схему на диск</translation>
+        <translation>Grabar el Circuito a Disco</translation>
     </message>
     <message>
         <source>Save Circuit &amp;As...	Ctrl+Shift+S</source>
-        <translation>Сохранить схему &amp;как...	Ctrl+Shift+S</translation>
+        <translation>Guardar Circuito Como...	Ctrl+Shift+S</translation>
     </message>
     <message>
         <source>Save the Circuit under a new name</source>
-        <translation>Сохранить схему под новым именем</translation>
+        <translation>rabar el Circuito con un nuevo nombre</translation>
     </message>
     <message>
         <source>Power Circuit</source>
-        <translation>Силовая схема</translation>
+        <translation>Encender Circuito</translation>
     </message>
     <message>
         <source>Power the Circuit</source>
-        <translation>Схема питания</translation>
+        <translation>Encerder el Circuito</translation>
     </message>
     <message>
         <source>Online Help</source>
-        <translation>Online помощь</translation>
+        <translation>Ayuda en Linea</translation>
     </message>
     <message>
         <source>
@@ -839,296 +838,295 @@ Circuit has been modified.
 Do you want to save your changes?
 </source>
         <translation>
-Схема была изменена.
-Хотите сохранить изменения?
-</translation>
+El Circuito ha sido modificado.
+Quiere guardar los cambios?</translation>
     </message>
     <message>
         <source>New Circuit</source>
-        <translation>Новая схема</translation>
+        <translation>Nuevo Circuito</translation>
     </message>
     <message>
         <source>Load Circuit</source>
-        <translation>Загрузить схему</translation>
+        <translation>Abrir Circuito</translation>
     </message>
     <message>
         <source>Circuits (*.simu);;All files (*.*)</source>
-        <translation>Схемы (*.simu);;Все файлы (*.*)</translation>
+        <translation>Circuitos (*.simu);;Todos (*.*)</translation>
     </message>
     <message>
         <source>Save Circuit</source>
-        <translation>Сохранить схему</translation>
+        <translation>Guardar circuito</translation>
     </message>
     <message>
         <source>Real Speed: Debugger</source>
-        <translation type="vanished">Реальная скорость: Отладчик</translation>
+        <translation type="vanished">Velocidad Real: Depurador</translation>
     </message>
     <message>
         <source>Circuit ERROR!!!</source>
-        <translation>Ошибка в схеме!!!</translation>
+        <translation>ERROR de Circuito!!!</translation>
     </message>
     <message>
         <source>Real Speed: </source>
-        <translation type="vanished">Реальная скорость: </translation>
+        <translation type="vanished">Velocidad Real:</translation>
     </message>
     <message>
-        <source>About SimulIDE</source>
-        <translation>О SimulIDE</translation>
+        <source>About QtArduSim</source>
+        <translation>Sobre SimilIDE</translation>
     </message>
     <message>
         <source>About Qt</source>
-        <translation>О Qt</translation>
+        <translation>Sobre Qt</translation>
     </message>
     <message>
         <source>    Real Speed: Debugger</source>
-        <translation>    Реальная скорость: Отладчик</translation>
+        <translation>    Velocidad Real: Depurador</translation>
     </message>
     <message>
         <source>    Real Speed: </source>
-        <translation>    Реальная скорость: </translation>
+        <translation>    Velocidad Real:</translation>
     </message>
 </context>
 <context>
     <name>Clock</name>
     <message>
         <source>Clock</source>
-        <translation>Часы</translation>
+        <translation>Reloj</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation>Источники</translation>
+        <translation>Fuentes</translation>
     </message>
 </context>
 <context>
     <name>CodeEditor</name>
     <message>
         <source> File: </source>
-        <translation> Файл: </translation>
+        <translation> Archivo: </translation>
     </message>
     <message>
         <source>File recognized as: </source>
-        <translation>Файл распознан как: </translation>
+        <translation>Archivo reconocido como: </translation>
     </message>
     <message>
         <source>File type not supported</source>
-        <translation>Тип файла не поддерживается</translation>
+        <translation>Tipo de archivo no soportado</translation>
     </message>
     <message>
         <source>     SUCCESS!!! Compilation Ok</source>
-        <translation>     УСПЕШНО!!! Компиляция завершена</translation>
+        <translation>     SUCCESS!!! Compilacion Correcta</translation>
     </message>
     <message>
         <source>     ERROR!!! Compilation Faliled</source>
-        <translation>     ОШИБКА!!! Компиляция не выполнена</translation>
+        <translation>     ERROR!!! Compilacion Fallida</translation>
     </message>
     <message>
         <source>Uploading: </source>
-        <translation>Загрузка: </translation>
+        <translation>Cargando: </translation>
     </message>
     <message>
         <source>
 Error:  Mcu Deleted while Debugging!!
 </source>
         <translation>
-Ошибка: микроконтроллер удалён при отладке!!!
+Error:  Mcu Borrado mientras se Depuraba!!
 </translation>
     </message>
     <message>
         <source>Starting Debbuger...</source>
-        <translation>Запуск отладчика...</translation>
+        <translation>Iniciando Depurador...</translation>
     </message>
     <message>
         <source>Error: No Mcu in Simulator... </source>
-        <translation>Ошибка: нет микроконтроллера в симуляторе... </translation>
+        <translation>Error: No hay Mcu en el simulador... </translation>
     </message>
     <message>
         <source>Error: No Debugger Suited for this File... </source>
-        <translation>Ошибка: нет подходящего отладчика для этого файла... </translation>
+        <translation>Error: No hay deprador para este tipo de archivo... </translation>
     </message>
     <message>
         <source>Error: No File... </source>
-        <translation>Ошибка: нет файла... </translation>
+        <translation>Error: No hay Archivo... </translation>
     </message>
     <message>
         <source>Error Compiling... </source>
-        <translation>Ошибка компиляции... </translation>
+        <translation>Error Compilando... </translation>
     </message>
     <message>
         <source>Error Loading Firmware... </source>
-        <translation>Ошибка загрузки прошивки... </translation>
+        <translation>Error Cargando Firmware... </translation>
     </message>
     <message>
         <source>Debbuger Started </source>
-        <translation>Отладчик запущен </translation>
+        <translation>Depurador Iniciado </translation>
     </message>
     <message>
         <source>Debbuger Stopped </source>
-        <translation>Отладчик остановлен </translation>
+        <translation>Depurador Detenido </translation>
     </message>
 </context>
 <context>
     <name>CodeEditorWidget</name>
     <message>
         <source>Ready</source>
-        <translation>Готов</translation>
+        <translation>Listo</translation>
     </message>
 </context>
 <context>
     <name>ColorCombo</name>
     <message>
         <source>Custom</source>
-        <translation>Настройка</translation>
+        <translation>Personalizado</translation>
     </message>
 </context>
 <context>
     <name>Component</name>
     <message>
         <source>Copy</source>
-        <translation>Копировать</translation>
+        <translation>Copiar</translation>
     </message>
     <message>
         <source>Remove</source>
-        <translation>Удалить</translation>
+        <translation>Eliminar</translation>
     </message>
     <message>
         <source>Properties</source>
-        <translation>Свойства</translation>
+        <translation>Propiedades</translation>
     </message>
     <message>
         <source>Rotate CW</source>
-        <translation>Повернуть на 90 градусов вправо</translation>
+        <translation>Rotar Derecha</translation>
     </message>
     <message>
         <source>Rotate CCW</source>
-        <translation>Повернуть на 90 градусов влево</translation>
+        <translation>Rotar Izquierda</translation>
     </message>
     <message>
         <source>Rotate 180</source>
-        <translation>Повернуть на 180 градусов</translation>
+        <translation>Rotar 180</translation>
     </message>
     <message>
         <source>Horizontal Flip</source>
-        <translation>Отразить по горизонтали</translation>
+        <translation>Espejo Horizontal</translation>
     </message>
     <message>
         <source>Vertical Flip</source>
-        <translation>Отразить по вертикали</translation>
+        <translation>Espejo Vertical</translation>
     </message>
 </context>
 <context>
     <name>ComponentPlugins</name>
     <message>
         <source>Manage Components</source>
-        <translation>Управление компонентами</translation>
+        <translation>Configurar Componentes</translation>
     </message>
 </context>
 <context>
     <name>ComponentSelector</name>
     <message>
         <source>    Loading Component sets at:</source>
-        <translation>    Загрузка набора компонентов в:</translation>
+        <translation>    Cargando grupo de componentes desde:</translation>
     </message>
     <message>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Не удаётся прочитать файл %1:
+        <translation>No se pudo leer el archivo %1:
 %2.</translation>
     </message>
     <message>
         <source>Cannot set file %1
 to DomDocument</source>
-        <translation>Не удаётся загрузить файл %1
-в DOMDocument</translation>
+        <translation>No se pudo convertir el archivo %1
+a DomDocument</translation>
     </message>
     <message>
         <source>        Loaded Component set:           </source>
-        <translation>        Загружен набор компонентов:           </translation>
+        <translation>Grupo de Componentes Cargado:</translation>
     </message>
     <message>
         <source>Manage Components</source>
-        <translation>Управление компонентами</translation>
+        <translation>Configurar Componentes</translation>
     </message>
 </context>
 <context>
     <name>ConnectorLine</name>
     <message>
         <source>Remove</source>
-        <translation type="unfinished">Удалить</translation>
+        <translation>Eliminar</translation>
     </message>
 </context>
 <context>
     <name>CurrSource</name>
     <message>
         <source>Current Source</source>
-        <translation>Источник тока</translation>
+        <translation>Fuente de Corriente</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation>Источники</translation>
+        <translation>Fuentes</translation>
     </message>
 </context>
 <context>
     <name>DAC</name>
     <message>
         <source>DAC</source>
-        <translation>ЦАП</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Other Logic</source>
-        <translation>Логика/Другое (Логика)</translation>
+        <translation>Logica/Otros (Logica)</translation>
     </message>
 </context>
 <context>
     <name>DecToBcd</name>
     <message>
         <source>Dec. To Bcd</source>
-        <translation>Шифратор</translation>
+        <translation>Dec a Bcd</translation>
     </message>
     <message>
         <source>Logic/Converters</source>
-        <translation>Логика/конвертер</translation>
+        <translation>Logica/Conversores</translation>
     </message>
 </context>
 <context>
     <name>Demux</name>
     <message>
         <source>Demux</source>
-        <translation>Демультиплексор</translation>
+        <translation>Demultiplexor</translation>
     </message>
     <message>
         <source>Logic/Converters</source>
-        <translation>Логика/конвертер</translation>
+        <translation>Logica/Conversores</translation>
     </message>
 </context>
 <context>
     <name>Diode</name>
     <message>
         <source>Diode</source>
-        <translation>Диод</translation>
+        <translation>Diodo</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Активные элементы</translation>
+        <translation>Activos</translation>
     </message>
 </context>
 <context>
     <name>EditorWindow</name>
     <message>
         <source>Load File</source>
-        <translation>Загрузить файл</translation>
+        <translation>Abrir Archivo</translation>
     </message>
     <message>
         <source>All files (*)</source>
-        <translation type="vanished">Все файлы (*)</translation>
+        <translation type="vanished">Todos (*)</translation>
     </message>
     <message>
         <source>Save Document As</source>
-        <translation>Сохранить документ как</translation>
+        <translation>Guardar Documento Como</translation>
     </message>
     <message>
         <source>Cannot write file %1:
 %2.</source>
-        <translation>Не удаётся записать файл %1:
+        <translation>No se pudo escribir el archivo %1:
 %2.</translation>
     </message>
     <message>
@@ -1137,417 +1135,416 @@ The Document has been modified.
 Do you want to save your changes?
 </source>
         <translation>
-Документ был изменен.
-Хотите сохранить изменения?
-</translation>
+El Documento ha sido modificado.
+Quiere guardar los cambios?</translation>
     </message>
     <message>
         <source>set Compiler Path</source>
-        <translation>Задать путь компилятора</translation>
+        <translation>Seleccionar Ruta del Compilador</translation>
     </message>
     <message>
         <source>&amp;New	Ctrl+N</source>
-        <translation>&amp;Новый	Ctrl+N</translation>
+        <translation>&amp;Nuevo	Ctrl+N</translation>
     </message>
     <message>
         <source>Create a new file</source>
-        <translation>Создать новый файл</translation>
+        <translation>Crear nuevo documento</translation>
     </message>
     <message>
         <source>&amp;Open...	Ctrl+O</source>
-        <translation>&amp;Открыть...	Ctrl+O</translation>
+        <translation>Abrir...	Ctrl+O</translation>
     </message>
     <message>
         <source>Open an existing file</source>
-        <translation>Открыть существующий файл</translation>
+        <translation>Abrir un Archivo existente</translation>
     </message>
     <message>
         <source>&amp;Save	Ctrl+S</source>
-        <translation>&amp;Сохранить	Ctrl+S</translation>
+        <translation>Guardar	Ctrl+S</translation>
     </message>
     <message>
         <source>Save the document to disk</source>
-        <translation>Сохранить документ на диск</translation>
+        <translation>Guardar el Documento a disco</translation>
     </message>
     <message>
         <source>Save &amp;As...	Ctrl+Shift+S</source>
-        <translation>Сохранить &amp;как...	Ctrl+Shift+S</translation>
+        <translation>Guardar Como...	Ctrl+Shift+S</translation>
     </message>
     <message>
         <source>Save the document under a new name</source>
-        <translation>Сохранить документ под новым именем</translation>
+        <translation>Guardar el documento con otro nombre</translation>
     </message>
     <message>
         <source>E&amp;xit</source>
-        <translation>В&amp;ыход</translation>
+        <translation>Salir</translation>
     </message>
     <message>
         <source>Exit the application</source>
-        <translation>Выйти из приложения</translation>
+        <translation>Salir de la aplicacion</translation>
     </message>
     <message>
         <source>Cu&amp;t	Ctrl+X</source>
-        <translation>Вы&amp;резать	Ctrl+X</translation>
+        <translation>Cortar	Ctrl+X</translation>
     </message>
     <message>
         <source>Cut the current selection&apos;s contents to the clipboard</source>
-        <translation>Вырезать содержимое текущего выделения в буфер обмена</translation>
+        <translation>Cortar la seleccion actual al portapapeles</translation>
     </message>
     <message>
         <source>&amp;Copy	Ctrl+C</source>
-        <translation>&amp;Копировать	Ctrl+C</translation>
+        <translation>Copiar	Ctrl+C</translation>
     </message>
     <message>
         <source>Copy the current selection&apos;s contents to the clipboard</source>
-        <translation>Копировать содержимое текущего выделения в буфер обмена</translation>
+        <translation>Copiarr la seleccion actual al portapapeles</translation>
     </message>
     <message>
         <source>&amp;Paste	Ctrl+V</source>
-        <translation>&amp;Вставить	Ctrl+V</translation>
+        <translation>Pegar	Ctrl+V</translation>
     </message>
     <message>
         <source>Paste the clipboard&apos;s contents into the current selection</source>
-        <translation>Вставить содержимое буфера обмена в текущее выделение</translation>
+        <translation>Pegar el contenido del portapapeles sobre la seleccion actual</translation>
     </message>
     <message>
         <source>Undo	Ctrl+Z</source>
-        <translation>Отменить	Ctrl+Z</translation>
+        <translation>Deshacer	Ctrl+Z</translation>
     </message>
     <message>
         <source>Undo the last action</source>
-        <translation>Отменить последнее действие</translation>
+        <translation>Deshacer la ultima accion</translation>
     </message>
     <message>
         <source>Redo	Ctrl+Shift+Z</source>
-        <translation>Повторить	Ctrl+Shift+Z</translation>
+        <translation>Rehacer	Ctrl+Shift+Z</translation>
     </message>
     <message>
         <source>Redo the last action</source>
-        <translation>Повторить последнее действие</translation>
+        <translation>Rehacer la ultima accion</translation>
     </message>
     <message>
         <source>Run To Breakpoint</source>
-        <translation>Перейти к точке останова</translation>
+        <translation>Ir hasta Breakpoint</translation>
     </message>
     <message>
         <source>Run to next breakpoint</source>
-        <translation>Перейти к следующей точке останова</translation>
+        <translation>Ejecutar hasta siguiente punto de corte</translation>
     </message>
     <message>
         <source>Step</source>
-        <translation>Шаг</translation>
+        <translation>Paso</translation>
     </message>
     <message>
         <source>Step debugger</source>
-        <translation>Шаг отладчика</translation>
+        <translation>Avanzar un paso</translation>
     </message>
     <message>
         <source>StepOver</source>
-        <translation>Перешагнуть</translation>
+        <translation>Saltar</translation>
     </message>
     <message>
         <source>Step Over</source>
-        <translation>Шаг с обходом</translation>
+        <translation>Saltar</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation>Пауза</translation>
+        <translation>Pausar</translation>
     </message>
     <message>
         <source>Pause debugger</source>
-        <translation>Приостановить отладчик</translation>
-    </message>
-    <message>
-        <source>Reset</source>
-        <translation>Сброс</translation>
+        <translation>Pausar depurador</translation>
     </message>
     <message>
         <source>Reset debugger</source>
-        <translation>Сбросить отладчик</translation>
+        <translation>Resetear depurador</translation>
     </message>
     <message>
         <source>Stop Debugger</source>
-        <translation>Остановить отладчик</translation>
+        <translation>Detener Depurador</translation>
     </message>
     <message>
         <source>Stop debugger</source>
-        <translation>Остановить отладчик</translation>
+        <translation>Terminar sesion de depuracion</translation>
     </message>
     <message>
         <source>Compile</source>
-        <translation>Компилировать</translation>
+        <translation>Compilar</translation>
     </message>
     <message>
         <source>Compile Source</source>
-        <translation>Компиляция исходного кода</translation>
+        <translation>Compilar el archivo actual</translation>
     </message>
     <message>
         <source>UpLoad</source>
-        <translation>Загрузить</translation>
+        <translation>Cargar firmware al Mcu</translation>
     </message>
     <message>
         <source>Load Firmware</source>
-        <translation>Загрузить прошивку</translation>
+        <translation>Cargar firmware al Mcu</translation>
     </message>
     <message>
         <source>Find Replace</source>
-        <translation>Найти и заменить</translation>
+        <translation>Buscar Reemplazar</translation>
     </message>
     <message>
         <source>Debug</source>
-        <translation>Отладка</translation>
+        <translation>Depurar</translation>
     </message>
     <message>
         <source>Start Debugger</source>
-        <translation>Запустить отладчик</translation>
+        <translation>Iniciar depurador</translation>
+    </message>
+    <message>
+        <source>Reset</source>
+        <translation></translation>
     </message>
     <message>
         <source>All files (*);;Arduino (*.ino);;Asm (*.asm);;GcBasic (*.gcb)</source>
-        <translation type="unfinished">Все файлы (*);;Arduino (*.ino);;Asm (*.asm);;GcBasic (*.gcb)</translation>
+        <translation>Todos (*);;Arduino (*.ino);;Asm (*.asm);;GcBasic (*.gcb)</translation>
     </message>
 </context>
 <context>
     <name>Ellipse</name>
     <message>
         <source>Ellipse</source>
-        <translation>Эллипс</translation>
+        <translation>Elipse</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Другое</translation>
+        <translation>Otros</translation>
     </message>
 </context>
 <context>
     <name>FileBrowser</name>
     <message>
         <source>Add Bookmark</source>
-        <translation>Добавить закладку</translation>
+        <translation>Añadir Marcador</translation>
     </message>
     <message>
         <source>Open in editor</source>
-        <translation>Открыть в редакторе</translation>
+        <translation>Abrir en Editor</translation>
     </message>
     <message>
         <source>Show Hidden</source>
-        <translation type="unfinished">Показать скрытые файлы</translation>
+        <translation>Mostrar Ocultos</translation>
     </message>
 </context>
 <context>
     <name>FileWidget</name>
     <message>
         <source>cd Up</source>
-        <translation>Шаг вверх</translation>
+        <translation>Subir</translation>
     </message>
     <message>
         <source>Remove Bookmark</source>
-        <translation>Удалить закладку</translation>
+        <translation>Eliminar Marcador</translation>
     </message>
 </context>
 <context>
     <name>FindReplaceDialog</name>
     <message>
         <source>Find/Replace</source>
-        <translation>Найти/Заменить</translation>
+        <translation>Encontrar/Reemplazar</translation>
     </message>
 </context>
 <context>
     <name>FindReplaceForm</name>
     <message>
         <source>no match found</source>
-        <translation>Совпадений не найдено</translation>
+        <translation>No encontrado</translation>
     </message>
     <message>
         <source>Replaced %1 occurrence(s)</source>
-        <translation>Заменено %1 местонахождение(я)</translation>
-    </message>
-    <message>
-        <source>Find/Replace</source>
-        <translation>Найти/Заменить</translation>
+        <translation>Reeplazadas %1 coincidencia(s)</translation>
     </message>
     <message>
         <source>&amp;Find:</source>
-        <translation>&amp;Найти:</translation>
+        <translation>Encontar:</translation>
     </message>
     <message>
         <source>R&amp;eplace with:</source>
-        <translation>З&amp;аменить на:</translation>
+        <translation>Remplazar con:</translation>
     </message>
     <message>
-        <source>Error</source>
-        <translation>Ошибка</translation>
+        <source>Find/Replace</source>
+        <translation>Encontrar/Reemplazar</translation>
     </message>
     <message>
         <source>D&amp;irection</source>
-        <translation>У&amp;казание</translation>
+        <translation>Direccion</translation>
     </message>
     <message>
         <source>&amp;Down</source>
-        <translation>&amp;Вниз</translation>
+        <translation>Abajo</translation>
     </message>
     <message>
         <source>&amp;Up</source>
-        <translation>Вв&amp;ерх</translation>
+        <translation>Arriba</translation>
     </message>
     <message>
         <source>&amp;Options</source>
-        <translation>&amp;Опции</translation>
+        <translation>Opciones</translation>
     </message>
     <message>
         <source>&amp;Case sensitive</source>
-        <translation>&amp;С учетом регистра</translation>
+        <translation>Mayusculas/minusculas</translation>
     </message>
     <message>
         <source>&amp;Whole words only</source>
-        <translation>&amp;Только целые слова</translation>
+        <translation>Solo Palabras enteras</translation>
     </message>
     <message>
         <source>R&amp;egular Expression</source>
-        <translation>&amp;Регулярное выражение</translation>
+        <translation>Expresion Regular</translation>
     </message>
     <message>
         <source>&amp;Find</source>
-        <translation>&amp;Найти</translation>
+        <translation>Encontar</translation>
     </message>
     <message>
         <source>&amp;Close</source>
-        <translation>&amp;Закрыть</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>&amp;Replace</source>
-        <translation>З&amp;аменить</translation>
+        <translation>Remplazar</translation>
     </message>
     <message>
         <source>Replace &amp;All</source>
-        <translation>Заменить в&amp;сё</translation>
+        <translation>Reemplazar todos</translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>FlipFlopD</name>
     <message>
         <source>FlipFlop D</source>
-        <translation>D-триггер</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Memory</source>
-        <translation>Логика/память</translation>
+        <translation>Logica/Memoria</translation>
     </message>
 </context>
 <context>
     <name>FlipFlopJK</name>
     <message>
         <source>FlipFlop JK</source>
-        <translation>JK-триггер</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Memory</source>
-        <translation>Логика/память</translation>
+        <translation>Logica/Memoria</translation>
     </message>
 </context>
 <context>
     <name>Frequencimeter</name>
     <message>
         <source>Frequencimeter</source>
-        <translation>Частотомер</translation>
+        <translation>Frecuencimetro</translation>
     </message>
     <message>
         <source>Meters</source>
-        <translation type="unfinished">Измерение</translation>
+        <translation>Medida</translation>
     </message>
 </context>
 <context>
     <name>FullAdder</name>
     <message>
         <source>Full Adder</source>
-        <translation>Сумматор</translation>
+        <translation>Sumador Completo</translation>
     </message>
     <message>
         <source>Logic/Arithmetic</source>
-        <translation>Логика/арифметика</translation>
+        <translation>Logica/Aritmetica</translation>
     </message>
 </context>
 <context>
     <name>Function</name>
     <message>
         <source>Function</source>
-        <translation>методика</translation>
+        <translation>Funcion</translation>
     </message>
     <message>
         <source>Logic/Arithmetic</source>
-        <translation>Логика/арифметика</translation>
+        <translation>Logica/Aritmetica</translation>
     </message>
     <message>
         <source>Set Function</source>
-        <translation type="unfinished">Hастроить функцию</translation>
+        <translation>Establecer Funcion</translation>
     </message>
     <message>
         <source> Function:</source>
-        <translation> методика:</translation>
+        <translation> Funcion:</translation>
     </message>
 </context>
 <context>
     <name>Ground</name>
     <message>
         <source>Ground (0 V)</source>
-        <translation>Земля (0 вольт)</translation>
+        <translation>Tierra</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation>Источники</translation>
+        <translation>Fuentes</translation>
     </message>
 </context>
 <context>
     <name>Hd44780</name>
     <message>
-        <source>Hd44780</source>
-        <translation>HD44780</translation>
+        <source>Outputs</source>
+        <translation>Salidas</translation>
     </message>
     <message>
-        <source>Outputs</source>
-        <translation>Выходы</translation>
+        <source>Hd44780</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>I2CRam</name>
     <message>
         <source>I2C Ram</source>
-        <translation>Память I2C</translation>
+        <translation>Ram I2C</translation>
     </message>
     <message>
         <source>Logic/Memory</source>
-        <translation>Логика/память</translation>
+        <translation>Logica/Memoria</translation>
     </message>
 </context>
 <context>
     <name>I2CToParallel</name>
     <message>
         <source>I2C to Parallel</source>
-        <translation>Конвертор I2C в Параллель</translation>
+        <translation>I2C a Paralelo</translation>
     </message>
     <message>
         <source>Logic/Converters</source>
-        <translation>Логика/конвертер</translation>
+        <translation>Logica/Conversores</translation>
     </message>
 </context>
 <context>
     <name>InBus</name>
     <message>
         <source>In Bus</source>
-        <translation>Входная шина</translation>
+        <translation>Bus Entrada</translation>
     </message>
     <message>
         <source>Logic/Other Logic</source>
-        <translation>Логика/Другое (Логика)</translation>
+        <translation>Logica/Otros (Logica)</translation>
     </message>
 </context>
 <context>
     <name>Inductor</name>
     <message>
-        <source>Inductor</source>
-        <translation>Индуктивность</translation>
+        <source>Passive</source>
+        <translation>Pasivos</translation>
     </message>
     <message>
-        <source>Passive</source>
-        <translation>Пассивные элементы</translation>
+        <source>Inductor</source>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -1555,7 +1552,7 @@ Do you want to save your changes?
     <message>
         <source>Cannot write file %1:
 %2.</source>
-        <translation>Не удаётся записать файл %1:
+        <translation>No se pudo escribir el archivo %1:
 %2.</translation>
     </message>
 </context>
@@ -1563,164 +1560,160 @@ Do you want to save your changes?
     <name>ItemLibrary</name>
     <message>
         <source>Gates</source>
-        <translation>ворота</translation>
+        <translation>Puertas</translation>
     </message>
     <message>
         <source>Logic</source>
-        <translation>Логика</translation>
+        <translation>Logica</translation>
     </message>
     <message>
         <source>Arithmetic</source>
-        <translation>арифметика</translation>
+        <translation>Aritmetica</translation>
     </message>
     <message>
         <source>Memory</source>
-        <translation>память</translation>
+        <translation>Memoria</translation>
     </message>
     <message>
         <source>Converters</source>
-        <translation>конвертер</translation>
+        <translation>Conversores</translation>
     </message>
     <message>
         <source>Other Logic</source>
-        <translation>Другое (Логика)</translation>
+        <translation>Otros (Logica)</translation>
     </message>
     <message>
         <source>Sensors</source>
-        <translation type="unfinished">датчиков</translation>
+        <translation>Sensores</translation>
     </message>
     <message>
         <source>Micro</source>
-        <translation type="unfinished">Микроконтроллеры</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>KeyPad</name>
     <message>
         <source>KeyPad</source>
-        <translation>Цифровая клавиатура</translation>
+        <translation>Teclado</translation>
     </message>
     <message>
         <source>Switches</source>
-        <translation>Переключатели</translation>
+        <translation>Interruptores</translation>
     </message>
 </context>
 <context>
     <name>Ks0108</name>
     <message>
-        <source>Ks0108</source>
-        <translation>KS0108</translation>
+        <source>Outputs</source>
+        <translation>Salidas</translation>
     </message>
     <message>
-        <source>Outputs</source>
-        <translation>Выходы</translation>
+        <source>Ks0108</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>LatchD</name>
     <message>
         <source>Latch</source>
-        <translation>Триггер</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Memory</source>
-        <translation>Логика/память</translation>
+        <translation>Logica/Memoria</translation>
     </message>
 </context>
 <context>
     <name>Led</name>
     <message>
-        <source>Led</source>
-        <translation>Светодиод</translation>
+        <source>Outputs</source>
+        <translation>Salidas</translation>
     </message>
     <message>
-        <source>Outputs</source>
-        <translation>Светодиоды</translation>
+        <source>Led</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>LedBar</name>
     <message>
         <source>LedBar</source>
-        <translation>Светодиодная сборка</translation>
+        <translation>Led (Barra)</translation>
     </message>
     <message>
         <source>Outputs</source>
-        <translation>Светодиоды</translation>
+        <translation>Salidas</translation>
     </message>
 </context>
 <context>
     <name>LedMatrix</name>
     <message>
         <source>LedMatrix</source>
-        <translation>Светодиодная матрица</translation>
+        <translation>Matriz Led</translation>
     </message>
     <message>
         <source>Outputs</source>
-        <translation>Светодиоды</translation>
+        <translation>Salidas</translation>
     </message>
 </context>
 <context>
     <name>Line</name>
     <message>
         <source>Line</source>
-        <translation>Линия</translation>
+        <translation>Linea</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Другое</translation>
+        <translation>Otros</translation>
     </message>
 </context>
 <context>
     <name>LineNumberArea</name>
     <message>
         <source>Add BreakPoint</source>
-        <translation>Добавить точку останова</translation>
+        <translation>Añadir Punto Ruptura</translation>
     </message>
     <message>
         <source>Remove BreakPoint</source>
-        <translation>Удалить точку останова</translation>
+        <translation>Eliminar Punto Ruptura</translation>
     </message>
 </context>
 <context>
     <name>Lm555</name>
     <message>
         <source>lm555</source>
-        <translation>LM555</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Other Logic</source>
-        <translation>Логика/Другое (Логика)</translation>
+        <translation>Logica/Otros (Logica)</translation>
     </message>
 </context>
 <context>
     <name>LogicInput</name>
     <message>
         <source>Fixed Volt.</source>
-        <translation>Фиксированное напряжение.</translation>
+        <translation>Voltaje Fijo.</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation>Источники</translation>
+        <translation>Fuentes</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <source>Components</source>
-        <translation>Компоненты</translation>
-    </message>
-    <message>
-        <source>RamTable</source>
-        <translation>Таблица RAM</translation>
+        <translation>Componentes</translation>
     </message>
     <message>
         <source>Properties</source>
-        <translation>Свойства</translation>
+        <translation>Propiedades</translation>
     </message>
     <message>
         <source>File explorer</source>
-        <translation>Файловый проводник</translation>
+        <translation>Explorador de Archivos</translation>
     </message>
     <message>
         <source> Qt5SerialPort is not installed in your system
@@ -1728,15 +1721,19 @@ Do you want to save your changes?
     Mcu SerialPort will not work
     Just Install libQt5SerialPort package
     To have Mcu Serial Port Working</source>
-        <translation> Qt5SerialPort не установлен в этой системе
+        <translation> Qt5SerialPort no esta instalado en su sistema
 
-    Микроконтроллерный SerialPort не будет работать
-    Просто установите пакет библиотек Qt5SerialPort
-    чтобы SerialPort микроконтроллера заработал</translation>
+    Mcu SerialPort no funcionara
+    Instale elpaquete libQt5SerialPort
+    Para tener Mcu Serial Port funcionando</translation>
     </message>
     <message>
         <source>Plugin Error:</source>
-        <translation>Ошибка плагина:</translation>
+        <translation>Error en Plugin:</translation>
+    </message>
+    <message>
+        <source>RamTable</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1744,578 +1741,586 @@ Do you want to save your changes?
     <message>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Не удаётся прочитать файл %1:
+        <translation>No se pudo leer el archivo %1:
 %2.</translation>
     </message>
     <message>
         <source>Cannot set file %1
 to DomDocument</source>
-        <translation>Не удаётся загрузить файл %1
-в DOMDocument</translation>
+        <translation>No se pudo convertir el archivo %1
+a DomDocument</translation>
     </message>
     <message>
         <source>Load firmware</source>
-        <translation>Загрузить прошивку</translation>
+        <translation>Cargar firmware</translation>
     </message>
     <message>
         <source>Reload firmware</source>
-        <translation>Перезагрузить прошивку</translation>
+        <translation>Recargar firmware</translation>
     </message>
     <message>
         <source>Open Serial Monitor.</source>
-        <translation>Открыть Serial Monitor.</translation>
+        <translation>Abrir Monitor.Serial </translation>
     </message>
     <message>
         <source>Close Serial Monitor</source>
-        <translation>Закрыть Serial Monitor</translation>
+        <translation>Cerrar Monitor.Serial </translation>
     </message>
     <message>
         <source>Open Serial Port.</source>
-        <translation>Открыть Serial Port.</translation>
+        <translation>Abrir Puerto Serie.</translation>
     </message>
     <message>
         <source>Close Serial Port</source>
-        <translation>Закрыть Serial Port</translation>
+        <translation>Cerrar Puerto Serie.</translation>
     </message>
     <message>
         <source>Load Firmware</source>
-        <translation>Загрузить прошивку</translation>
+        <translation>Cargar firmware</translation>
     </message>
     <message>
         <source>Hex Files (*.hex);;ELF Files (*.elf);;all files (*.*)</source>
-        <translation>Файлы HEX (*.hex);;Файлы ELF (*.elf);;Все файлы (*.*)</translation>
+        <translation>Hex (*.hex);;ELF (*.elf);;Todos (*.*)</translation>
     </message>
     <message>
         <source>No File:</source>
-        <translation>Нет файла:</translation>
+        <translation>No hay Archivo</translation>
     </message>
     <message>
         <source>No File to reload </source>
-        <translation>Нет файла для перезагрузки </translation>
+        <translation>No hay Archivo que recargar</translation>
     </message>
 </context>
 <context>
     <name>Mosfet</name>
     <message>
-        <source>Mosfet</source>
-        <translation>МОП-транзистор</translation>
+        <source>Active</source>
+        <translation>Activos</translation>
     </message>
     <message>
-        <source>Active</source>
-        <translation>Активные элементы</translation>
+        <source>Mosfet</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>Mux</name>
     <message>
         <source>Mux</source>
-        <translation>Мультиплексор</translation>
+        <translation>Multiplexor</translation>
     </message>
     <message>
         <source>Logic/Converters</source>
-        <translation>Логика/конвертер</translation>
+        <translation>Logica/Conversores</translation>
     </message>
 </context>
 <context>
     <name>MuxAnalog</name>
     <message>
         <source>Analog Mux</source>
-        <translation type="unfinished">Аналоговый Мультиплексор</translation>
+        <translation>Multiplexor Analogico</translation>
+    </message>
+    <message>
+        <source>Outputs</source>
+        <translation type="obsolete">Salidas</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation type="unfinished">Активные элементы</translation>
+        <translation>Activos</translation>
     </message>
 </context>
 <context>
     <name>OpAmp</name>
     <message>
         <source>OpAmp</source>
-        <translation>Операционный усилитель</translation>
+        <translation>Amplificador Operacional</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Активные элементы</translation>
+        <translation>Activos</translation>
     </message>
 </context>
 <context>
     <name>OrGate</name>
     <message>
         <source>Or Gate</source>
-        <translation>ИЛИ</translation>
+        <translation>Puerta Or</translation>
     </message>
     <message>
         <source>Logic/Gates</source>
-        <translation>Логика/ворота</translation>
+        <translation>Logica/Puertas</translation>
     </message>
 </context>
 <context>
     <name>Oscope</name>
     <message>
         <source>Oscope</source>
-        <translation>Осциллограф</translation>
+        <translation>Osciloscopio</translation>
     </message>
     <message>
         <source>Meters</source>
-        <translation>Измерение</translation>
+        <translation>Medida</translation>
     </message>
 </context>
 <context>
     <name>OutBus</name>
     <message>
         <source>Out Bus</source>
-        <translation>Выходная шина</translation>
+        <translation>Bus Salida</translation>
     </message>
     <message>
         <source>Logic/Other Logic</source>
-        <translation>Логика/Другое (Логика)</translation>
+        <translation>Logica/Otros (Logica)</translation>
     </message>
 </context>
 <context>
     <name>PICComponent</name>
     <message>
+        <source>Only 1 Mcu allowed
+ to be in the Circuit.</source>
+        <translation>Solo puede haber
+1 Microcontrolador en el Circuito.</translation>
+    </message>
+    <message>
         <source>Micro</source>
-        <translation>Микроконтроллеры</translation>
+        <translation></translation>
     </message>
     <message>
         <source>Error</source>
-        <translation>Ошибка</translation>
-    </message>
-    <message>
-        <source>Only 1 Mcu allowed
- to be in the Circuit.</source>
-        <translation>Может быть использован
-только 1 микроконтроллер.</translation>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>Pcd8544</name>
     <message>
-        <source>Pcd8544</source>
-        <translation>PCD8544</translation>
+        <source>Outputs</source>
+        <translation>Salidas</translation>
     </message>
     <message>
-        <source>Outputs</source>
-        <translation>Выходы</translation>
+        <source>Pcd8544</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>PicProcessor</name>
     <message>
         <source>File Not Found</source>
-        <translation>Файл не найден</translation>
+        <translation>Archivo No Encontrado</translation>
     </message>
     <message>
         <source>The file &quot;%1&quot; was not found.</source>
-        <translation>Файл &quot;%1&quot; не найден.</translation>
+        <translation>No se encontro el archivo: &quot;%1&quot;</translation>
     </message>
     <message>
         <source>Unkown Error:</source>
-        <translation>Неизвестная ошибка:</translation>
+        <translation>Error no Especificado:</translation>
     </message>
     <message>
         <source>Could not Create Pic Processor: &quot;%1&quot;</source>
-        <translation>Не удалось создать PIC микроконтроллер: &quot;%1&quot;</translation>
+        <translation>No se pudo crear Pic Processor: &quot;%1&quot;</translation>
     </message>
     <message>
         <source>Could not Load: &quot;%1&quot;</source>
-        <translation>Не удалось загрузить: &quot;%1&quot;</translation>
+        <translation>No se pudo cargar: &quot;%1&quot;</translation>
     </message>
 </context>
 <context>
     <name>PlotterWidget</name>
     <message>
         <source>Max </source>
-        <translation type="unfinished">Макс  </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Min  </source>
-        <translation type="unfinished">Мини </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Scale:   </source>
-        <translation type="unfinished">Масштаб: </translation>
+        <translation>Escala: </translation>
     </message>
     <message>
         <source>Tracks: </source>
-        <translation type="unfinished">Дорожки: </translation>
+        <translation>Pistas:  </translation>
     </message>
 </context>
 <context>
     <name>Potentiometer</name>
     <message>
         <source>Potentiometer</source>
-        <translation>Потенциометр</translation>
+        <translation>Potenciometro</translation>
     </message>
     <message>
         <source>Passive</source>
-        <translation>Пассивные элементы</translation>
+        <translation>Pasivos</translation>
     </message>
 </context>
 <context>
     <name>Probe</name>
     <message>
         <source>Probe</source>
-        <translation>Измерительный щуп</translation>
+        <translation>Sonda Voltaje.</translation>
     </message>
     <message>
         <source>Meters</source>
-        <translation>Измерение</translation>
+        <translation>Medida</translation>
     </message>
     <message>
         <source>Add to Plotter</source>
-        <translation type="vanished">Добавить в графопостроитель</translation>
+        <translation type="vanished">Añadir al Plotter</translation>
     </message>
     <message>
         <source>Remove from Plotter</source>
-        <translation>Удалить из графопостроителя</translation>
+        <translation>Quitar del Plotter</translation>
     </message>
     <message>
         <source>Plotter Channel</source>
-        <translation type="unfinished">Канал графопостроитель</translation>
+        <translation>Canal Plotter</translation>
     </message>
     <message>
         <source>Channel 1</source>
-        <translation type="unfinished">Канал 1</translation>
+        <translation>Canal 1</translation>
     </message>
     <message>
         <source>Channel 2</source>
-        <translation type="unfinished">Канал 2</translation>
+        <translation>Canal 2</translation>
     </message>
     <message>
         <source>Channel 3</source>
-        <translation type="unfinished">Канал 3</translation>
+        <translation>Canal 3</translation>
     </message>
     <message>
         <source>Channel 4</source>
-        <translation type="unfinished">Канал 4</translation>
+        <translation>Canal 4</translation>
     </message>
 </context>
 <context>
     <name>Push</name>
     <message>
         <source>Push</source>
-        <translation>Кнопка</translation>
+        <translation>Pulsador</translation>
     </message>
     <message>
         <source>Switches</source>
-        <translation>Переключатели</translation>
+        <translation>Interruptores</translation>
     </message>
 </context>
 <context>
     <name>QPropertyModel</name>
     <message>
         <source>Name</source>
-        <translation>Имя</translation>
+        <translation>Nombre</translation>
     </message>
     <message>
         <source>Value</source>
-        <translation>Значение</translation>
+        <translation>Valor</translation>
     </message>
 </context>
 <context>
     <name>Rail</name>
     <message>
-        <source>Rail.</source>
-        <translation>Линия питания.</translation>
+        <source>Sources</source>
+        <translation>Fuentes</translation>
     </message>
     <message>
-        <source>Sources</source>
-        <translation>Источники</translation>
+        <source>Rail.</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>Ram8bit</name>
     <message>
         <source>8bit Ram</source>
-        <translation>Память 8-бит</translation>
+        <translation>Ram 8 Bit</translation>
     </message>
     <message>
         <source>Logic/Memory</source>
-        <translation>Логика/память</translation>
+        <translation>Logica/Memoria</translation>
     </message>
 </context>
 <context>
     <name>RamTable</name>
     <message>
-        <source>Reg.</source>
-        <translation>Reg.</translation>
-    </message>
-    <message>
-        <source>Dec</source>
-        <translation>Десятичный</translation>
-    </message>
-    <message>
         <source>Binary</source>
-        <translation>Бинарный</translation>
+        <translation>Binario</translation>
     </message>
     <message>
         <source>Load VarSet</source>
-        <translation>Загрузить VarSet</translation>
-    </message>
-    <message>
-        <source>Save VarSet</source>
-        <translation>Сохранить VarSet</translation>
+        <translation>Cargar Grupo de Variables</translation>
     </message>
     <message>
         <source>VarSets (*.vst);;All files (*.*)</source>
-        <translation>VarSets (*.vst);;Все файлы (*.*)</translation>
+        <translation>VarSets (*.vst);;Todos (*.*)</translation>
+    </message>
+    <message>
+        <source>Save VarSet</source>
+        <translation>Grabar Grupo de Variables</translation>
     </message>
     <message>
         <source>Cannot write file %1:
 %2.</source>
-        <translation>Не удаётся записать файл %1:
+        <translation>No se pudo escribir el archivo %1:
 %2.</translation>
     </message>
     <message>
+        <source>Reg.</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Dec</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Clear Selected</source>
-        <translation type="unfinished">Очистить выбранное</translation>
+        <translation>Borrar Seleccionados</translation>
     </message>
     <message>
         <source>Clear Table</source>
-        <translation type="unfinished">Очистить Таблица</translation>
+        <translation>Borrar Tabla</translation>
     </message>
     <message>
         <source>Load Variables</source>
-        <translation type="unfinished">Загрузить переменные</translation>
+        <translation>Cargar Variables</translation>
     </message>
 </context>
 <context>
     <name>Rectangle</name>
     <message>
         <source>Rectangle</source>
-        <translation>Прямоугольник</translation>
+        <translation>Rectangulo</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Другое</translation>
+        <translation>Otros</translation>
     </message>
 </context>
 <context>
     <name>RelaySPST</name>
     <message>
         <source>Relay (all)</source>
-        <translation>Реле (все)</translation>
+        <translation>Rele (todos)</translation>
     </message>
     <message>
         <source>Switches</source>
-        <translation>Переключатели</translation>
+        <translation>Interruptores</translation>
     </message>
 </context>
 <context>
     <name>Resistor</name>
     <message>
         <source>Resistor</source>
-        <translation>Резистор</translation>
+        <translation>Reistencia</translation>
     </message>
     <message>
         <source>Passive</source>
-        <translation>Пассивные элементы</translation>
+        <translation>Pasivos</translation>
     </message>
 </context>
 <context>
     <name>ResistorDip</name>
     <message>
         <source>ResistorDip</source>
-        <translation>Резисторная сборка</translation>
+        <translation>Resistencia (Dip)</translation>
     </message>
     <message>
         <source>Passive</source>
-        <translation>Пассивные элементы</translation>
+        <translation>Pasivos</translation>
     </message>
 </context>
 <context>
     <name>SR04</name>
+    <message>
+        <source>Outputs</source>
+        <translation type="obsolete">Salidas</translation>
+    </message>
     <message>
         <source>HC-SR04</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Sensors</source>
-        <translation type="unfinished">датчиков</translation>
+        <translation>Sensores</translation>
     </message>
 </context>
 <context>
     <name>SerialPortWidget</name>
     <message>
-        <source>N/A</source>
-        <translation>Нет данных</translation>
-    </message>
-    <message>
         <source>Description: %1</source>
-        <translation>Описание: %1</translation>
+        <translation>Descripcion: %1</translation>
     </message>
     <message>
         <source>Manufacturer: %1</source>
-        <translation>Изготовитель: %1</translation>
+        <translation>Fabricante: %1</translation>
     </message>
     <message>
         <source>Serial number: %1</source>
-        <translation>Серийный номер: %1</translation>
+        <translation>Numero de Serie: %1</translation>
     </message>
     <message>
         <source>Connected to %1 : %2, %3, %4, %5, %6</source>
-        <translation>Подключен к %1 : %2, %3, %4, %5, %6</translation>
-    </message>
-    <message>
-        <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Connectado a %1 : %2, %3, %4, %5, %6</translation>
     </message>
     <message>
         <source>Custom</source>
-        <translation>Настройка</translation>
+        <translation>Personalizado</translation>
     </message>
     <message>
         <source>None</source>
-        <translation>Нет</translation>
+        <translation>Ninguno</translation>
     </message>
     <message>
         <source>Even</source>
-        <translation>Чётный</translation>
+        <translation>Par</translation>
     </message>
     <message>
         <source>Odd</source>
-        <translation>Нечётный</translation>
+        <translation>Impar</translation>
     </message>
     <message>
         <source>Mark</source>
-        <translation>Маркер</translation>
+        <translation>Marcar</translation>
     </message>
     <message>
         <source>Space</source>
-        <translation>Пробел</translation>
+        <translation>Espacio</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation>Настройки</translation>
+        <translation>Configuracion</translation>
     </message>
     <message>
         <source>Manufacturer:</source>
-        <translation>Изготовитель:</translation>
+        <translation>Fabricante:</translation>
     </message>
     <message>
         <source>Serial number:</source>
-        <translation>Серийный номер:</translation>
+        <translation>Numero de Serie:</translation>
     </message>
     <message>
         <source>Description:</source>
-        <translation>Описание:</translation>
+        <translation>Descripcion:</translation>
     </message>
     <message>
         <source>Open</source>
-        <translation>Открыть</translation>
+        <translation>Abrir</translation>
     </message>
     <message>
         <source>Close</source>
-        <translation>Закрыть</translation>
+        <translation>Cerrar</translation>
     </message>
     <message>
         <source>Parity:</source>
-        <translation>Чётность:</translation>
+        <translation>Paridad:</translation>
     </message>
     <message>
         <source>Flow control:</source>
-        <translation>Управление потоком:</translation>
+        <translation>Control de Flujo</translation>
     </message>
     <message>
         <source>Stop bits:</source>
-        <translation>Стоповые биты:</translation>
-    </message>
-    <message>
-        <source>BaudRate:</source>
-        <translation>Бит в секунду:</translation>
+        <translation>Bits de Parada:</translation>
     </message>
     <message>
         <source>Data bits:</source>
-        <translation>Биты данных:</translation>
+        <translation>Bits de Datos</translation>
+    </message>
+    <message>
+        <source>N/A</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Error</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>BaudRate:</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>Servo</name>
     <message>
-        <source>Servo</source>
-        <translation>Сервопривод</translation>
+        <source>Outputs</source>
+        <translation>Salidas</translation>
     </message>
     <message>
-        <source>Outputs</source>
-        <translation>Выходы</translation>
+        <source>Servo</source>
+        <translation></translation>
     </message>
 </context>
 <context>
     <name>SevenSegment</name>
     <message>
         <source>7 Segment</source>
-        <translation>7-сегментный светодиод</translation>
+        <translation>7 Segmentos</translation>
     </message>
     <message>
         <source>Outputs</source>
-        <translation>Выходы</translation>
+        <translation>Salidas</translation>
     </message>
 </context>
 <context>
     <name>SevenSegmentBCD</name>
     <message>
-        <source>7 Seg BCD</source>
-        <translation>7-сегментный декодер</translation>
+        <source>Logic</source>
+        <translation type="vanished">Logica</translation>
     </message>
     <message>
-        <source>Logic</source>
-        <translation type="vanished">Логика</translation>
+        <source>7 Seg BCD</source>
+        <translation></translation>
     </message>
     <message>
         <source>Logic/Other Logic</source>
-        <translation type="unfinished">Логика/Другое (Логика)</translation>
+        <translation type="unfinished">Logica/Otros (Logica)</translation>
     </message>
 </context>
 <context>
     <name>ShiftReg</name>
     <message>
         <source>Shift Reg.</source>
-        <translation>Сдвиговый регистр.</translation>
+        <translation>Registro Desplazamiento</translation>
     </message>
     <message>
         <source>Logic/Arithmetic</source>
-        <translation>Логика/арифметика</translation>
+        <translation>Logica/Aritmetica</translation>
     </message>
 </context>
 <context>
     <name>Stepper</name>
     <message>
         <source>Stepper</source>
-        <translation>Шаговый двигатель</translation>
+        <translation>Motor de Pasos</translation>
     </message>
     <message>
         <source>Outputs</source>
-        <translation>Выходы</translation>
+        <translation>Salidas</translation>
     </message>
 </context>
 <context>
     <name>SubCircuit</name>
     <message>
         <source>Subcircuit</source>
-        <translation>Подсхема</translation>
+        <translation>Subcircuito</translation>
     </message>
     <message>
         <source>Cannot read file %1:
 %2.</source>
-        <translation>Не удаётся прочитать файл %1:
+        <translation>No se pudo leer el archivo %1:
 %2.</translation>
     </message>
     <message>
         <source>Cannot set file %1
 to DomDocument</source>
-        <translation>Не удаётся загрузить файл %1
-в DOMDocument</translation>
+        <translation>No se pudo convertir el archivo %1
+a DomDocument</translation>
     </message>
     <message>
         <source>Error reading Subcircuit file: %1
 </source>
-        <translation>Ошибка чтения файла подсхемы: %1
+        <translation>Error leyendo archivo de Subcircuito: %1
 </translation>
     </message>
     <message>
         <source>There are no data files for </source>
-        <translation type="unfinished"></translation>
+        <translation>No hay archivo de datos para </translation>
     </message>
 </context>
 <context>
@@ -2326,54 +2331,56 @@ to DomDocument</source>
     </message>
     <message>
         <source>Logic</source>
-        <translation type="obsolete">Логика</translation>
+        <translation type="vanished">Logica</translation>
     </message>
     <message>
         <source>Pin Label</source>
-        <translation type="unfinished"></translation>
+        <translation>Nombre de Pin</translation>
     </message>
     <message>
         <source>Set Pin Name:</source>
-        <translation type="unfinished"></translation>
+        <translation>Cambiar Nombre de Pin</translation>
     </message>
     <message>
         <source>name</source>
-        <translation type="unfinished"></translation>
+        <translation>nombre</translation>
     </message>
     <message>
         <source>
 Package has been modified.
 Do you want to save your changes?
 </source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">
+Package ha sido modificado.
+Quiere guardar los cambios?</translation>
     </message>
     <message>
         <source>Move Pin </source>
-        <translation type="unfinished"></translation>
+        <translation>Mover Pin </translation>
     </message>
     <message>
         <source>Rename Pin </source>
-        <translation type="unfinished"></translation>
+        <translation>Renombrar Pin </translation>
     </message>
     <message>
         <source>Invert Pin </source>
-        <translation type="unfinished"></translation>
+        <translation>Invertir Pin </translation>
     </message>
     <message>
         <source>Unused Pin </source>
-        <translation type="unfinished"></translation>
+        <translation>Deshabilitar Pin </translation>
     </message>
     <message>
         <source>Delete Pin </source>
-        <translation type="unfinished"></translation>
+        <translation>Eliminar Pin </translation>
     </message>
     <message>
         <source>Load Package</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Cargar Package</translation>
     </message>
     <message>
         <source>Save Package</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Guardar PAckage</translation>
     </message>
     <message>
         <source>Load Package File</source>
@@ -2386,145 +2393,145 @@ Do you want to save your changes?
     <message>
         <source>Cannot write file %1:
 %2.</source>
-        <translation type="unfinished">Не удаётся записать файл %1:
+        <translation>No se pudo escribir el archivo %1:
 %2.</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation type="unfinished">Другое</translation>
+        <translation type="unfinished">Otros</translation>
     </message>
 </context>
 <context>
     <name>Switch</name>
     <message>
         <source>Switches</source>
-        <translation>Переключатели</translation>
+        <translation>Interruptores</translation>
     </message>
     <message>
         <source>Switch (all)</source>
-        <translation>Переключатели (все)</translation>
+        <translation>Interuptor (todos)</translation>
     </message>
 </context>
 <context>
     <name>SwitchDip</name>
     <message>
-        <source>Switches</source>
-        <translation>Переключатели</translation>
+        <source>Switch Dip</source>
+        <translation>InterruptorDip</translation>
     </message>
     <message>
-        <source>Switch Dip</source>
-        <translation>Переключатели Dip</translation>
+        <source>Switches</source>
+        <translation>Interruptores</translation>
     </message>
 </context>
 <context>
     <name>TerminalWidget</name>
     <message>
         <source>Send Text:</source>
-        <translation>Текст:</translation>
+        <translation>Enviar Texto:</translation>
     </message>
     <message>
         <source>    Send Value:</source>
-        <translation>    Значение:</translation>
+        <translation>    Enviar Valor:</translation>
     </message>
     <message>
         <source>    Print:</source>
-        <translation type="unfinished">    печатать:</translation>
+        <translation>    Imprimir:</translation>
     </message>
     <message>
         <source> Value </source>
-        <translation>Значение</translation>
+        <translation> Valor </translation>
     </message>
     <message>
         <source>Received From Micro:</source>
-        <translation type="unfinished">Полученные от Микроконтроллеры:</translation>
+        <translation>Recibido Desde Micro:</translation>
     </message>
     <message>
         <source>Sent to Micro:</source>
-        <translation type="unfinished">Отправлено в Микроконтроллеры:</translation>
+        <translation>Enviado a Micro:</translation>
     </message>
 </context>
 <context>
     <name>TextComponent</name>
     <message>
         <source>Text</source>
-        <translation>Текст</translation>
+        <translation>Texto</translation>
     </message>
     <message>
         <source>Other</source>
-        <translation>Другое</translation>
+        <translation>Otros</translation>
     </message>
 </context>
 <context>
     <name>VoltReg</name>
     <message>
         <source>Volt. Regulator</source>
-        <translation>Регулятор напряжения</translation>
+        <translation>Regulador Voltaje</translation>
     </message>
     <message>
         <source>Active</source>
-        <translation>Активные элементы</translation>
+        <translation>Activos</translation>
     </message>
 </context>
 <context>
     <name>VoltSource</name>
     <message>
         <source>Volt. Source</source>
-        <translation>Источник напряжения</translation>
+        <translation>Fuente Voltaje</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation>Источники</translation>
+        <translation>Fuentes</translation>
     </message>
 </context>
 <context>
     <name>Voltimeter</name>
     <message>
         <source>Voltimeter</source>
-        <translation>Вольтметер</translation>
+        <translation>Voltimetro</translation>
     </message>
     <message>
         <source>Meters</source>
-        <translation>Измерение</translation>
+        <translation>Medida</translation>
     </message>
 </context>
 <context>
     <name>WaveGen</name>
     <message>
         <source>Wave Gen.</source>
-        <translation>Генератор.</translation>
+        <translation>Generador Onda</translation>
     </message>
     <message>
         <source>Sources</source>
-        <translation>Источники</translation>
+        <translation>Fuentes</translation>
     </message>
 </context>
 <context>
     <name>XorGate</name>
     <message>
         <source>Xor Gate</source>
-        <translation>Исключающее ИЛИ</translation>
+        <translation>Puerta Xor</translation>
     </message>
     <message>
         <source>Logic/Gates</source>
-        <translation>Логика/ворота</translation>
+        <translation>Logica/Puertas</translation>
     </message>
 </context>
 <context>
     <name>elCapacitor</name>
     <message>
         <source>Electrolytic Capacitor</source>
-        <translation>Электролитический конденсатор</translation>
+        <translation>Condensador Electrolitico</translation>
     </message>
     <message>
         <source>Passive</source>
-        <translation>Пассивные элементы</translation>
+        <translation>Pasivos</translation>
     </message>
 </context>
 <context>
     <name>xmlfile</name>
     <message>
         <source>Logic</source>
-        <translation>Логика</translation>
+        <translation>Logica</translation>
     </message>
 </context>
 </TS>

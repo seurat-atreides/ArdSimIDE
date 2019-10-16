@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Arduino Uno-2: 
 <item Show_id="true" x="-340" program="arduino_music.ino.hex" objectName="Arduino Uno-2" Mhz="16" rotation="0" labelx="0" labelrot="0" hflip="1" valLabely="0" itemtype="Arduino" vflip="1" labely="-20" valLabelx="0" id="Arduino Uno-2" y="-252" valLabRot="0"/>

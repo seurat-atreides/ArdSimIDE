@@ -8,4 +8,4 @@ Voltimeter:
 
 
 More Info:
-http://simulide.blogspot.com/p/meters.html
+http://qtardusim.blogspot.com/p/meters.html

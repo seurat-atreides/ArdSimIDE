@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Potentiometer-4: 
 <item Unit=" kΩ" itemtype="Potentiometer" Show_id="true" x="764" rotation="0" Value_Ohm="1000" Show_res="true" hflip="1" labely="-44" valLabelx="19" objectName="Potentiometer-4" valLabRot="-360" id="Position" y="-412" valLabely="-15" labelrot="0" vflip="1" Resistance="5" labelx="-21"/>

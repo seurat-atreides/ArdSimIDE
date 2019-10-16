@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Ground (0 V)-22: 
 <item itemtype="Ground" vflip="1" id="Ground (0 V)-22" Show_id="false" valLabRot="0" hflip="1" x="-276" y="-76" valLabelx="0" labely="-24" valLabely="0" objectName="Ground (0 V)-22" rotation="0" labelx="-16" labelrot="0"/>

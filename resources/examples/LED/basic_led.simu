@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Volt. Source-6: 
 <item x="-372" vflip="1" id="Volt. Source-6" hflip="1" labelrot="0" valLabRot="0" valLabelx="-25" Show_Volt="true" Voltage="5" Show_id="false" Unit=" V" y="-148" labely="-24" itemtype="Voltage Source" labelx="-16" objectName="Volt. Source-6" valLabely="16" rotation="0"/>

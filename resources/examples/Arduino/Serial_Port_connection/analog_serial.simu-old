@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Clock-7: 
 <item valLabRot="0" Show_id="false" valLabely="8" Unit=" V" labelx="-64" labelrot="0" labely="-24" objectName="Clock-7" Show_Volt="true" Voltage="5" x="-292" hflip="1" y="-340" id="Clock-7" rotation="0" itemtype="Clock" valLabelx="-16" vflip="1" Freq="1"/>

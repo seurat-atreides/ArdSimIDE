@@ -16,7 +16,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.  *
  *                                                                         *
  ***************************************************************************/
-#ifndef _WIN32
 
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -88,12 +87,9 @@ static void elf_parse_mmcu_section(elf_firmware_t * firmware, uint8_t * src, uin
                 uint8_t mask = src[0];
                 uint16_t addr = src[1] | (src[2] << 8);
                 char * name = (char*)src + 3;
-
-//#if 0
                 AVR_LOG(NULL, LOG_DEBUG,
                         "VCD_TRACE %d %04x:%02x - %s\n", tag,
                         addr, mask, name);
-//#endif
                 firmware->trace[firmware->tracecount].kind = tag;
                 firmware->trace[firmware->tracecount].mask = mask;
                 firmware->trace[firmware->tracecount].addr = addr;
@@ -338,5 +334,3 @@ int elf_read_firmware_ext(const char * file, elf_firmware_t * firmware)
 	close(fd);
 	return 0;
 }
-
-#endif

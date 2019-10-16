@@ -1,4 +1,4 @@
-<circuit noLinAcc="5" type="simulide_0.1" reactStep="50" noLinStep="10" speed="1000000">
+<circuit noLinAcc="5" type="qtardusim_0.1" reactStep="50" noLinStep="10" speed="1000000">
  
 74HC4024-6: 
 <item id="74HC4024-6" vflip="1" labelx="0" labelrot="0" rotation="0" x="-364" objectName="74HC4024-6" Show_id="true" y="-156" valLabRot="0" valLabely="0" hflip="1" itemtype="Subcircuit" labely="-20" valLabelx="0"/>

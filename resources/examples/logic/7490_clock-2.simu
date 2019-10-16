@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Text-41: 
 <item Show_id="false" id="Text-41" labelrot="0" rotation="0" Text="HH:MM:SS Clock.&#xa;&#xa;Turn On Clock to Start.&#xa;&#xa;Min. Set:&#xa;Advance Minutes.&#xa;&#xa;Hour Set:&#xa;Advance Hours." vflip="1" Fixed_Width="false" Border="1" valLabRot="0" objectName="Text-41" x="-388" itemtype="TextComponent" y="-508" Margin="5" valLabelx="0" labely="-24" labelx="-16" valLabely="0" hflip="1" Font_Size="0"/>

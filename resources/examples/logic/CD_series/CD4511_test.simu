@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Resistencia (Dip)-43: 
 <item valLabelx="7" y="-140" itemtype="ResistorDip" id="Resistencia (Dip)-43" vflip="1" valLabely="-20" objectName="Resistencia (Dip)-43" labely="-24" labelx="-16" valLabRot="90" Unit=" Ω" hflip="1" labelrot="0" rotation="0" x="-468" Show_res="true" Show_id="false" Resistance="75"/>

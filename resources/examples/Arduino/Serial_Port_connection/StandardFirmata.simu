@@ -1,0 +1,48 @@
+<circuit noLinAcc="5" type="qtardusim_0.1" speed="1000000" reactStep="50" animate="0" noLinStep="10">
+ 
+Arduino Uno-7: 
+<item Program="StandardFirmata/StandardFirmata.ino.hex" labelx="0" Ser_Port="false" vflip="1" y="-284" rotation="0" hflip="1" objectName="Arduino Uno-7" x="-324" itemtype="Arduino" valLabely="0" Mhz="16" Ser_Monitor="false" id="Arduino Uno-7" labelrot="0" valLabelx="0" Logic_Symbol="false" labely="-20" valLabRot="0" Show_id="true"/>
+ 
+Fixed Volt.-6: 
+<item labelx="-64" Unit=" V" vflip="1" y="-268" rotation="0" hflip="1" objectName="Fixed Volt.-6" x="-396" itemtype="Fixed Voltage" Show_Volt="true" valLabely="8" id="Fixed Volt.-6" labelrot="0" valLabelx="-16" labely="-24" valLabRot="0" Show_id="false" Voltage="5"/>
+ 
+Fixed Volt.-5: 
+<item labelx="-64" Unit=" V" vflip="1" y="-244" rotation="0" hflip="1" objectName="Fixed Volt.-5" x="-396" itemtype="Fixed Voltage" Show_Volt="true" valLabely="8" id="Fixed Volt.-5" labelrot="0" valLabelx="-16" labely="-24" valLabRot="0" Show_id="false" Voltage="5"/>
+ 
+Fixed Volt.-4: 
+<item labelx="-64" Unit=" V" vflip="1" y="-220" rotation="0" hflip="1" objectName="Fixed Volt.-4" x="-396" itemtype="Fixed Voltage" Show_Volt="true" valLabely="8" id="Fixed Volt.-4" labelrot="0" valLabelx="-16" labely="-24" valLabRot="0" Show_id="false" Voltage="5"/>
+ 
+Volt. Source-3: 
+<item labelx="-16" Unit=" V" vflip="1" y="-324" rotation="0" hflip="1" objectName="Volt. Source-3" x="-156" itemtype="Voltage Source" Show_Volt="true" valLabely="10" id="Volt. Source-3" labelrot="0" valLabelx="-26" labely="-24" valLabRot="0" Show_id="false" Voltage="5"/>
+ 
+Volt. Source-2: 
+<item labelx="-16" Unit=" V" vflip="1" y="-324" rotation="0" hflip="1" objectName="Volt. Source-2" x="-68" itemtype="Voltage Source" Show_Volt="true" valLabely="10" id="Volt. Source-2" labelrot="0" valLabelx="-26" labely="-24" valLabRot="0" Show_id="false" Voltage="5"/>
+ 
+Volt. Source-1: 
+<item labelx="-16" Unit=" V" vflip="1" y="-324" rotation="0" hflip="1" objectName="Volt. Source-1" x="44" itemtype="Voltage Source" Show_Volt="true" valLabely="10" id="Volt. Source-1" labelrot="0" valLabelx="-26" labely="-24" valLabRot="0" Show_id="false" Voltage="5"/>
+ 
+Connector-8: 
+<item enodeid="Circ_eNode-9" labelx="-16" vflip="1" y="-268" rotation="0" hflip="1" startpinid="Fixed Volt.-6-outnod" objectName="Connector-8" x="-380" itemtype="Connector" pointList="-380,-268,-316,-268" valLabely="0" id="Connector-8" labelrot="0" valLabelx="0" labely="-24" endpinid="Arduino Uno-7-PD0" valLabRot="0" Show_id="false"/>
+ 
+Connector-10: 
+<item enodeid="Circ_eNode-11" labelx="-16" vflip="1" y="-244" rotation="0" hflip="1" startpinid="Fixed Volt.-5-outnod" objectName="Connector-10" x="-380" itemtype="Connector" pointList="-380,-244,-316,-244" valLabely="0" id="Connector-10" labelrot="0" valLabelx="0" labely="-24" endpinid="Arduino Uno-7-PD3" valLabRot="0" Show_id="false"/>
+ 
+Connector-12: 
+<item enodeid="Circ_eNode-13" labelx="-16" vflip="1" y="-220" rotation="0" hflip="1" startpinid="Fixed Volt.-4-outnod" objectName="Connector-12" x="-380" itemtype="Connector" pointList="-380,-220,-316,-220" valLabely="0" id="Connector-12" labelrot="0" valLabelx="0" labely="-24" endpinid="Arduino Uno-7-PD6" valLabRot="0" Show_id="false"/>
+ 
+Connector-14: 
+<item enodeid="Circ_eNode-15" labelx="-16" vflip="1" y="-324" rotation="0" hflip="1" startpinid="Volt. Source-3-outPin" objectName="Connector-14" x="-140" itemtype="Connector" pointList="-140,-324,-132,-324,-132,-252,-172,-252" valLabely="0" id="Connector-14" labelrot="0" valLabelx="0" labely="-24" endpinid="Arduino Uno-7-PC3" valLabRot="0" Show_id="false"/>
+ 
+Connector-16: 
+<item enodeid="Circ_eNode-17" labelx="-16" vflip="1" y="-324" rotation="0" hflip="1" startpinid="Volt. Source-2-outPin" objectName="Connector-16" x="-52" itemtype="Connector" pointList="-52,-324,-28,-324,-28,-244,-172,-244" valLabely="0" id="Connector-16" labelrot="0" valLabelx="0" labely="-24" endpinid="Arduino Uno-7-PC2" valLabRot="0" Show_id="false"/>
+ 
+Connector-18: 
+<item enodeid="Circ_eNode-19" labelx="-16" vflip="1" y="-324" rotation="0" hflip="1" startpinid="Volt. Source-1-outPin" objectName="Connector-18" x="60" itemtype="Connector" pointList="60,-324,60,-228,-172,-228" valLabely="0" id="Connector-18" labelrot="0" valLabelx="0" labely="-24" endpinid="Arduino Uno-7-PC0" valLabRot="0" Show_id="false"/>
+ 
+PlotterWidget-20: 
+<item size="" toolTipDuration="-1" Scale="1" isActiveWindow="true" geometry="" sizeHint="" windowTitle="" MaxVolt="500" enabled="true" palette="" styleSheet="" MinVolt="-500" locale="" mouseTracking="false" maximumSize="" cursor="" windowIcon="" minimized="false" fullScreen="false" minimumSize="" windowFilePath="" frameGeometry="" accessibleName="" normalGeometry="" minimumWidth="200" inputMethodHints="0" frameSize="" childrenRect="" y="0" acceptDrops="false" objectName="PlotterWidget-20" accessibleDescription="" windowModality="0" rect="" Tracks="1" tabletTracking="false" minimumHeight="200" sizeIncrement="" itemtype="Plotter" maximumHeight="200" updatesEnabled="true" x="0" toolTip="" minimumSizeHint="" layoutDirection="0" width="200" visible="false" autoFillBackground="false" height="200" windowOpacity="1" pos="" childrenRegion="" maximumWidth="1000" statusTip="" font="Ubuntu,11,-1,5,50,0,0,0,0,0" whatsThis="" focusPolicy="0" sizePolicy="" windowModified="false" windowIconText="" modal="false" focus="false" baseSize="" maximized="false" contextMenuPolicy="1"/>
+ 
+SerialPortWidget-21: 
+<item size="" toolTipDuration="-1" isActiveWindow="true" geometry="" sizeHint="" windowTitle="Settings" SettingsProp="ttyS4,0,3,0,0,0" enabled="true" palette="" styleSheet="" locale="" mouseTracking="false" maximumSize="" cursor="" windowIcon="" minimized="false" fullScreen="false" minimumSize="" windowFilePath="" frameGeometry="" accessibleName="" normalGeometry="" minimumWidth="0" inputMethodHints="0" frameSize="" childrenRect="" y="0" acceptDrops="false" objectName="SerialPortWidget-21" accessibleDescription="" windowModality="0" rect="" tabletTracking="false" minimumHeight="0" sizeIncrement="" itemtype="SerialPort" maximumHeight="170" updatesEnabled="true" x="0" toolTip="" minimumSizeHint="" layoutDirection="0" width="313" visible="false" autoFillBackground="false" height="141" windowOpacity="1" pos="" childrenRegion="" maximumWidth="450" statusTip="" font="Ubuntu,11,-1,5,50,0,0,0,0,0" whatsThis="" focusPolicy="0" sizePolicy="" windowModified="false" windowIconText="" modal="false" focus="false" baseSize="" maximized="false" contextMenuPolicy="1"/>
+ 
+</circuit>

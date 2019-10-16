@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Wave Gen.-13: 
 <item labely="-24" y="-124" rotation="0" Show_Volt="true" x="-428" Wave_Type="3" labelrot="0" Volt_Base="0" valLabely="8" Duty_Square="50" Quality="1" labelx="-64" objectName="Wave Gen.-13" id="Wave Gen.-13" Show_id="false" Running="true" valLabelx="-16" hflip="1" itemtype="WaveGen" Unit=" V" Voltage="5" vflip="1" valLabRot="0" Freq="1"/>

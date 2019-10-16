@@ -24,35 +24,14 @@
 
 int main(int argc, char *argv[])
 {
-
-#ifdef _WIN32
-    QStringList paths = QCoreApplication::libraryPaths();
-    paths.append("plugins");
-    paths.append("plugins/platforms");
-    paths.append("plugins/imageformats");
-    paths.append("plugins/sqldrivers");
-    paths.append("plugins/bearer");
-    paths.append("plugins/generic");
-    paths.append("plugins/iconengines");
-    paths.append("plugins/qmltooling");
-    paths.append("plugins/printsupport");
-    QCoreApplication::setLibraryPaths(paths);
-    
-    if (AttachConsole(ATTACH_PARENT_PROCESS)) 
-    {
-        freopen("CONOUT$", "w", stdout);
-        freopen("CONOUT$", "w", stderr);
-    }
-#endif
-
     //QApplication::setGraphicsSystem( "raster" );//native, raster, opengl
     QApplication app( argc, argv );
 
     QString locale   = QLocale::system().name().split("_").first();
-    QString langFile = "../share/simulide/translations/simulide_"+locale+".qm";
+    QString langFile = "../share/qtardusim/translations/qtardusim_"+locale+".qm";
     
     QFile file( langFile );
-    if( !file.exists() ) langFile = "../share/simulide/translations/simulide_en.qm";
+    if( !file.exists() ) langFile = "../share/qtardusim/translations/qtardusim_en.qm";
     
     QTranslator translator;
     translator.load( langFile );

@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Text-39: 
 <item hflip="1" Fixed_Width="false" rotation="0" Show_id="false" id="Text-39" Border="1" valLabelx="0" Margin="2" objectName="Text-39" x="-548" valLabely="0" labelrot="0" y="-276" Font_Size="0" itemtype="TextComponent" Text="The file Test_74HC165.ino has been modified from:&#xa;http://wiki.t-o-f.info/Arduino/ExempleMutliplexeurDentr%C3%A9esNum%C3%A9riques74HC165#toc3" labely="-24" valLabRot="0" labelx="-16" vflip="1"/>

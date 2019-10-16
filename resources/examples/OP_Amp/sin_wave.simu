@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Resistor-17: 
 <item Unit=" kΩ" hflip="1" labely="-24" id="Resistor-17" objectName="Resistor-17" valLabRot="0" labelrot="0" valLabely="5" vflip="1" valLabelx="-13" Resistance="2" itemtype="Resistor" Show_id="false" rotation="0" y="-76" labelx="0" x="-220" Show_res="true"/>

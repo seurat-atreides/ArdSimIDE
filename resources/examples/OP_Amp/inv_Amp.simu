@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Rail.-17: 
 <item Unit=" V" hflip="1" Voltage="2.5" labely="-24" id="Rail.-17" objectName="Rail.-17" valLabRot="0" labelrot="0" valLabely="-27" vflip="1" valLabelx="-12" itemtype="Rail" Show_id="false" rotation="0" y="-156" Show_Volt="true" labelx="-64" x="-236"/>

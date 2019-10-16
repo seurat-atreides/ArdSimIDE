@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Arduino Uno-6: 
 <item Ser_Monitor="true" valLabRot="0" Show_id="true" valLabely="0" program="Dimmer.ino.hex" labelx="51" labelrot="0" labely="-19" objectName="Arduino Uno-6" Ser_Port="false" x="-316" hflip="1" y="-300" id="Arduino Uno" rotation="0" itemtype="Arduino" valLabelx="0" Mhz="16" vflip="1"/>

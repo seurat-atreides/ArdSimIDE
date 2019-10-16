@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 I2C to Parallel-3: 
 <item Show_id="false" hflip="1" id="I2C to Parallel-3" rotation="0" valLabelx="0" valLabely="0" vflip="1" itemtype="I2CToParallel" x="-292" y="-268" valLabRot="0" Control_Code="80" labelrot="0" labely="-24" labelx="-16" objectName="I2C to Parallel-3"/>

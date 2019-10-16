@@ -1,4 +1,4 @@
-<!DOCTYPE SimulIDE>
+<!DOCTYPE QtArduSim>
 
 
 <package name="ULN2804" pins="18" width="4" height="10">

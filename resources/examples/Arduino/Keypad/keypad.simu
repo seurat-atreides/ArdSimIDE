@@ -1,4 +1,4 @@
-<circuit type="simulide_0.1">
+<circuit type="qtardusim_0.1">
  
 Teclado-2: 
 <item valLabely="0" valLabelx="0" labelx="-16" id="Teclado-2" valLabRot="0" Cols="3" hflip="1" y="-348" Show_id="false" labely="-24" itemtype="KeyPad" vflip="1" x="-604" Rows="4" rotation="0" objectName="Teclado-2" labelrot="0" Key_Labels="123456789*0#"/>

@@ -1,4 +1,4 @@
-<circuit noLinAcc="5" type="simulide_0.1" reactStep="50" noLinStep="10" speed="1000000">
+<circuit noLinAcc="5" type="qtardusim_0.1" reactStep="50" noLinStep="10" speed="1000000">
  
 Fixed Volt.-18: 
 <item Voltage="5" labelrot="0" valLabRot="0" id="Fixed Volt.-18" Show_Volt="true" y="-308" labelx="-64" valLabely="8" objectName="Fixed Volt.-18" itemtype="Fixed Voltage" vflip="1" x="-532" Unit=" V" Show_id="false" valLabelx="-16" rotation="0" labely="-24" hflip="1"/>
