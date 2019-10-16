@@ -141,7 +141,7 @@ void ComponentSelector::loadXml( const QString &setFile )
                 if( element.hasAttribute("icon") )
                 {
                     QDir compSetDir( qApp->applicationDirPath() );
-                    compSetDir.cd( "../share/simulide/data/images" );
+                    compSetDir.cd( "../share/qtardusim/data/images" );
                     icon = compSetDir.absoluteFilePath( element.attribute("icon") );
                 }
                 QString name = element.attribute( "name" );
@@ -346,11 +346,6 @@ void ComponentSelector::slotContextMenu( const QPoint& point )
     
     QAction* managePluginAction = menu.addAction( QIcon(":/fileopen.png"),tr("Manage Components") );
     connect( managePluginAction, SIGNAL(triggered()), this, SLOT(slotManageComponents()) );
-    
-    //QAction* installAction = menu.addAction( QIcon(":/fileopen.png"),tr("Install New Component") );
-    //connect( installAction, SIGNAL(triggered()), this, SLOT(slotIstallItem()) );
-
-    //menu->addSeparator();
     
     menu.exec( mapToGlobal(point) );
 }

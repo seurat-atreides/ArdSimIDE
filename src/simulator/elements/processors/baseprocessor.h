@@ -45,8 +45,6 @@ class MAINMODULE_EXPORT BaseProcessor : public QObject
 
         virtual void setSteps( double steps );
         virtual void step()=0;
-        virtual void stepOne()=0;
-        virtual void stepCpu()=0;
         virtual void reset()=0;
         virtual int  pc()=0;
         

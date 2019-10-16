@@ -64,7 +64,6 @@ gdb_watch_find(
 		const avr_gdb_watchpoints_t * w,
 		uint32_t addr )
 {
-#ifndef _WIN32
 	for (int i = 0; i < w->len; i++) {
 		if (w->points[i].addr > addr) {
 			return -1;
@@ -72,7 +71,6 @@ gdb_watch_find(
 			return i;
 		}
 	}
-#endif
 	return -1;
 }
 
@@ -85,7 +83,6 @@ gdb_watch_find_range(
 		const avr_gdb_watchpoints_t * w,
 		uint32_t addr )
 {
-#ifndef _WIN32
 	for (int i = 0; i < w->len; i++) {
 		if (w->points[i].addr > addr) {
 			return -1;
@@ -93,7 +90,6 @@ gdb_watch_find_range(
 			return i;
 		}
 	}
-#endif
 	return -1;
 }
 
@@ -107,7 +103,7 @@ gdb_watch_add_or_update(
 		uint32_t addr,
 		uint32_t size )
 {
-#ifndef _WIN32
+
 	/* If the watchpoint exists, update it. */
 	int i = gdb_watch_find(w, addr);
 	if (i != -1) {
@@ -139,7 +135,6 @@ gdb_watch_add_or_update(
 	w->points[i].kind = kind;
 	w->points[i].addr = addr;
 	w->points[i].size = size;
-#endif
 	return 0;
 }
 
@@ -152,7 +147,6 @@ gdb_watch_rm(
 		enum avr_gdb_watch_type kind,
 		uint32_t addr )
 {
-#ifndef _WIN32
 	int i = gdb_watch_find(w, addr);
 	if (i == -1) {
 		return -1;
@@ -168,7 +162,6 @@ gdb_watch_rm(
 	}
 
 	w->len--;
-#endif
 	return 0;
 }
 
@@ -184,7 +177,6 @@ gdb_send_reply(
 		avr_gdb_t * g,
 		char * cmd )
 {
-#ifndef _WIN32
 	uint8_t reply[1024];
 	uint8_t * dst = reply;
 	uint8_t check = 0;
@@ -196,7 +188,6 @@ gdb_send_reply(
 	sprintf((char*)dst, "#%02x", check);
 	DBG(printf("%s '%s'\n", __FUNCTION__, reply);)
 	send(g->s, reply, dst - reply + 3, 0);
-#endif
 }
 
 static void
@@ -204,7 +195,6 @@ gdb_send_quick_status(
 		avr_gdb_t * g,
 		uint8_t signal )
 {
-#ifndef _WIN32
 	char cmd[64];
 
 	sprintf(cmd, "T%02x20:%02x;21:%02x%02x;22:%02x%02x%02x00;",
@@ -212,7 +202,6 @@ gdb_send_quick_status(
 		g->avr->data[R_SPL], g->avr->data[R_SPH],
 		g->avr->pc & 0xff, (g->avr->pc>>8)&0xff, (g->avr->pc>>16)&0xff);
 	gdb_send_reply(g, cmd);
-#endif
 }
 
 static int
@@ -223,7 +212,6 @@ gdb_change_breakpoint(
 		uint32_t addr,
 		uint32_t size )
 {
-#ifndef _WIN32
 	DBG(printf("set %d kind %d addr %08x len %d\n", set, kind, addr, len);)
 
 	if (set) {
@@ -231,7 +219,6 @@ gdb_change_breakpoint(
 	} else {
 		return gdb_watch_rm(w, kind, addr);
 	}
-#endif
 	return -1;
 }
 
@@ -241,7 +228,6 @@ gdb_write_register(
 		int regi,
 		uint8_t * src )
 {
-#ifndef _WIN32
 	switch (regi) {
 		case 0 ... 31:
 			g->avr->data[regi] = *src;
@@ -258,7 +244,6 @@ gdb_write_register(
 			g->avr->pc = src[0] | (src[1] << 8) | (src[2] << 16) | (src[3] << 24);
 			return 4;
 	}
-#endif
 	return 1;
 }
 
@@ -268,7 +253,6 @@ gdb_read_register(
 		int regi,
 		char * rep )
 {
-#ifndef _WIN32
 	switch (regi) {
 		case 0 ... 31:
 			sprintf(rep, "%02x", g->avr->data[regi]);
@@ -288,7 +272,6 @@ gdb_read_register(
 			break;
 	}
 	return strlen(rep);
-#endif
 return 0;
 }
 
@@ -297,7 +280,6 @@ gdb_handle_command(
 		avr_gdb_t * g,
 		char * cmd )
 {
-#ifndef _WIN32
 	avr_t * avr = g->avr;
 	char rep[1024];
 	uint8_t command = *cmd++;
@@ -484,7 +466,6 @@ gdb_handle_command(
 			gdb_send_reply(g, "");
 			break;
 	}
-#endif
 }
 
 static int
@@ -492,7 +473,7 @@ gdb_network_handler(
 		avr_gdb_t * g,
 		uint32_t dosleep )
 {
-#ifndef _WIN32
+
 	fd_set read_set;
 	int max;
 	FD_ZERO(&read_set);
@@ -570,7 +551,6 @@ gdb_network_handler(
 			gdb_handle_command(g, (char*)src);
 		}
 	}
-#endif
 	return 1;
 }
 
@@ -584,7 +564,6 @@ avr_gdb_handle_watchpoints(
 		uint16_t addr,
 		enum avr_gdb_watch_type type )
 {
-#ifndef _WIN32
 	avr_gdb_t *g = avr->gdb;
 
 	int i = gdb_watch_find_range(&g->watchpoints, addr);
@@ -607,7 +586,6 @@ avr_gdb_handle_watchpoints(
 
 		avr->state = cpu_Stopped;
 	}
-#endif
 }
 
 int
@@ -615,7 +593,6 @@ avr_gdb_processor(
 		avr_t * avr,
 		int sleep )
 {
-#ifndef _WIN32
 	if (!avr || !avr->gdb)
 		return 0;
 	avr_gdb_t * g = avr->gdb;
@@ -631,7 +608,6 @@ avr_gdb_processor(
 	}
 	// this also sleeps for a bit
 	return gdb_network_handler(g, sleep);
-#endif
 return 0;
 }
 
@@ -640,7 +616,6 @@ int
 avr_gdb_init(
 		avr_t * avr )
 {
-#ifndef _WIN32
 	if (avr->gdb)
 		return 0; // GDB server already is active
 
@@ -688,7 +663,6 @@ error:
 	if (g->listen >= 0)
 		close(g->listen);
 	free(g);
-#endif
 	return -1;
 }
 
@@ -696,7 +670,6 @@ void
 avr_deinit_gdb(
 		avr_t * avr )
 {
-#ifndef _WIN32
 	if (!avr->gdb)
 		return;
 	avr->run = avr_callback_run_raw; // restore normal callbacks
@@ -711,5 +684,4 @@ avr_deinit_gdb(
 	avr->gdb = NULL;
 
 	network_release();
-#endif
 }

@@ -49,7 +49,6 @@ OscopeWidget::OscopeWidget(  QWidget *parent  )
     m_auto = true;
     
     m_oscope  = 0l;
-    //clear();
 }
 OscopeWidget::~OscopeWidget()
 { 
@@ -305,7 +304,6 @@ void OscopeWidget::setupWidget(  int size  )
     m_horizontalLayout = new QHBoxLayout( this );
     m_horizontalLayout->setObjectName( "horizontalLayout" );
     m_horizontalLayout->setContentsMargins(2, 2, 2, 2);
-    //m_horizontalLayout.setSpacing(0);
     
     m_verticalLayout = new QVBoxLayout();
     m_verticalLayout->setObjectName( "verticalLayout" );
@@ -338,10 +336,9 @@ void OscopeWidget::setupWidget(  int size  )
     row2Layout->setSpacing(0);
     
     m_autoCheck = new QCheckBox( "Auto", this );
-    //m_autoCheck->setLayoutDirection(Qt::RightToLeft);
     m_autoCheck->setChecked( true );
-    m_autoCheck->setFixedSize( 38, 16 );
-    font.setPixelSize(9);
+    m_autoCheck->setFixedSize( 42, 20 );
+    font.setPixelSize(8);
     m_autoCheck->setFont( font );
     row2Layout->addWidget( m_autoCheck );
     
@@ -359,11 +356,6 @@ void OscopeWidget::setupWidget(  int size  )
     row2Layout->addWidget( VLabel );
     
     m_verticalLayout->addLayout( row2Layout );
-    
-    /*QFrame* line = new QFrame(this);
-    line->setFrameShape(QFrame::HLine);
-    line->setFrameShadow(QFrame::Sunken);
-    m_verticalLayout->addWidget(line);*/
     
     QHBoxLayout* row0Layout = new QHBoxLayout();
     row0Layout->setObjectName( "row0Layout" );
@@ -383,7 +375,6 @@ void OscopeWidget::setupWidget(  int size  )
     m_HscaleDial->setWrapping(true);
     m_HscaleDial->setMinimum( 1 );
     m_HscaleDial->setMaximum( 20 );
-    //m_HscaleDial->setValue( 10 );
     m_HscaleDial->setSingleStep( 1 );
     row0Layout->addWidget(m_HscaleDial );
     
@@ -394,7 +385,6 @@ void OscopeWidget::setupWidget(  int size  )
     m_VscaleDial->setWrapping( true );
     m_VscaleDial->setMinimum( 1 );
     m_VscaleDial->setMaximum( 20 );
-    //m_VscaleDial->setValue( 25 );
     m_VscaleDial->setSingleStep( 1 );
     row0Layout->addWidget( m_VscaleDial );    
     

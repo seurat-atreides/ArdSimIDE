@@ -32,7 +32,7 @@ class AppIface
 
 
 QT_BEGIN_NAMESPACE
-Q_DECLARE_INTERFACE(AppIface, "com.SimulIDE.Plugin.AppIface/1.0");
+Q_DECLARE_INTERFACE(AppIface, "com.QtArduSim.Plugin.AppIface/1.0");
 QT_END_NAMESPACE
 
 #endif

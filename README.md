@@ -1,24 +1,25 @@
-# SimulIDE 0.3.12
+# QtArduSim
 
 Electronic Circuit Simulator
 
 
-SimulIDE is a simple real time electronic circuit simulator.
+QtArduSim is a simple real time electronic circuit simulator.
 
-It's intended for general purpose electronics and microcontroller simulation, supporting PIC, AVR and Arduino.
+It's a general purpose electronics and microcontroller simulation supporting AVR and Arduino.
 
-PIC simulation is provided by gpsim and avr simulation by simavr.
+AVR simulation is provided by simavr.
 
-This is not an accurate simulator for circuit analisis, it aims to be the fast, simple and easy to use, so this means simple and not very accurate electronic models and limited features.
+This is not an accurate simulator for circuit analisis, it aims to be the fast, simple and easy to use.
+This means simple and not very accurate electronic models and limited features.
 
-Intended for hobbist or students to learn and experiment with simple circuits.
+Intended for hobbyist and students that want to learn and experiment with simple circuits.
+The objective is to intergate QtArduSim with VS-Code/Platformio:
 
+ - The code is created in VS-Code/Platformio and loaded via the virtual serial port,
+ - The circuit is created in QtArduSim,
+ - Debugging is done via GDB via the Platfromio integration.
 
-SimulIDE also features a code Editor and Debugger for GcBasic, Arduino, PIC asm and AVR asm.
-Editor/Debugger is still in it's firsts stages of development, with basic functionalities, but it is possible to write, compile and basic debugging with breakpoints, watch registers and global variables.
-
-
-## Building SimulIDE:
+## Building QtArduSim:
 
 Build dependencies:
 
@@ -46,11 +47,10 @@ $ qmake
 $ make
 ```
 
-In folder build_XX/release/SimulIDE_x.x.x you will find executable and all files needed to run SimulIDE.
+In folder build_XX/release/QtArduSim_x.x.x you will find executable and all files needed to run QtArduSim.
 
 
-
-## Running SimulIDE:
+## Running QtArduSim:
 
 Run time dependencies:
 
@@ -67,5 +67,5 @@ Run time dependencies:
  - libelf
 
 
-SimuliDE executable is in bin folder.
-No need for installation, place SimulIDE folder wherever you want and run the executable.
+QtArduSim executable is in bin folder.
+No need for installation, place QtArduSim folder wherever you want and run the executable.

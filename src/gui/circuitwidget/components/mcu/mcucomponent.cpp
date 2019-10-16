@@ -169,7 +169,6 @@ void McuComponent::terminate()
     m_processor->terminate();
     for( int i=0; i<m_numpins; i++ ) m_pinList[i]->terminate();
     m_pSelf = 0l;
-    //reset();
     qDebug() <<"     ..."<<m_id<<"Terminated\n";
 }
 
@@ -179,7 +178,6 @@ void McuComponent::remove()
     {
         Pin* pin = mcupin->pin(); 
         if( pin->connector() ) pin->connector()->remove();
-        //delete mcupin;
     }
     slotCloseTerm();
     slotCloseSerial();
@@ -294,7 +292,6 @@ void McuComponent::load( QString fileName )
         QSettings* settings = MainWindow::self()->settings();
         settings->setValue( "lastFirmDir", m_symbolFile );
     }
-    //else QMessageBox::warning( 0, tr("Error:"), tr("Could not load: \n")+ fileName );
     
     if( pauseSim ) Simulator::self()->runContinuous();
 }

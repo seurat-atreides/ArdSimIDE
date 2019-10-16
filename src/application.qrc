@@ -2,7 +2,7 @@
     <qresource prefix="/">
         <file alias="null.png">../src/icons/components/null.png</file>
         
-        <file alias="simulide.png">../src/icons/simulide.png</file>
+        <file alias="qtardusim.png">../src/icons/qtardusim.png</file>
         <file alias="null-0.png">../src/icons/components/null-0.png</file>
         <file alias="newcirc.png">../src/icons/mainwindow/new.png</file>
         <file alias="opencirc.png">../src/icons/mainwindow/open.png</file>

@@ -274,7 +274,7 @@ void Component::slotProperties()
 {
     QPropertyEditorWidget::self()->setObject( this );
     PropertiesWidget::self()->setHelpText( m_help );
-    MainWindow::self()->m_sidepanel->setCurrentIndex( 2 ); // Open Properties tab
+    MainWindow::self()->m_sidepanel->setCurrentIndex( 1 ); // Open Properties tab
 }
 
 void Component::H_flip()

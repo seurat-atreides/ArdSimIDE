@@ -22,8 +22,6 @@
 	You should have received a copy of the GNU General Public License
 	along with simavr.  If not, see <http://www.gnu.org/licenses/>.
  */
- 
-
 
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -31,10 +29,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#ifndef _WIN32
 #include <libelf.h>
 #include <gelf.h>
-#endif
 #include "sim_elf.h"
 #include "sim_vcd_file.h"
 #include "avr_eeprom.h"
@@ -192,7 +188,7 @@ avr_load_firmware(
 
     return 0;
 }
-#ifndef _WIN32
+
 static void
 elf_parse_mmcu_section(
 		elf_firmware_t * firmware,
@@ -232,13 +228,6 @@ elf_parse_mmcu_section(
 						firmware->external_state[i].port = src[2];
 						firmware->external_state[i].mask = src[1];
 						firmware->external_state[i].value = src[0];
-#if 0
-						AVR_LOG(NULL, LOG_DEBUG,
-							"AVR_MMCU_TAG_PORT_EXTERNAL_PULL[%d] %c:%02x:%02x\n",
-							i, firmware->external_state[i].port,
-							firmware->external_state[i].mask,
-							firmware->external_state[i].value);
-#endif
 						break;
 					}
 			}	break;
@@ -248,12 +237,6 @@ elf_parse_mmcu_section(
 				uint8_t mask = src[0];
 				uint16_t addr = src[1] | (src[2] << 8);
 				char * name = (char*)src + 3;
-
-#if 0
-				AVR_LOG(NULL, LOG_DEBUG,
-						"VCD_TRACE %d %04x:%02x - %s\n", tag,
-						addr, mask, name);
-#endif
 				firmware->trace[firmware->tracecount].kind = tag;
 				firmware->trace[firmware->tracecount].mask = mask;
 				firmware->trace[firmware->tracecount].addr = addr;
@@ -449,4 +432,3 @@ int elf_read_firmware(const char * file, elf_firmware_t * firmware)
 	close(fd);
 	return 0;
 }
-#endif

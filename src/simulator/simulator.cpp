@@ -39,7 +39,6 @@ Simulator::Simulator( QObject* parent )
     m_pSelf = this;
 
     m_isrunning = false;
-    m_debugging = false;
     m_paused    = false;
 
     m_step       = 0;
@@ -67,10 +66,10 @@ inline void Simulator::solveMatrix()
     m_eChangedNodeList.clear();
 
     if( !m_matrix.solveMatrix() )                // Try to solve matrix,
-    {                                         // if fail stop simulation
+    {                                            // if fail, stop simulation
         std::cout << "Simulator::solveMatrix(), Failed to solve Matrix" << std::endl;
         m_error = true;
-    }                                // m_matrix sets the eNode voltages
+    } // m_matrix sets the eNode voltages
 }
 
 void Simulator::timerEvent( QTimerEvent* e )  //update at m_timerTick rate (50 ms, 20 Hz max)
@@ -144,8 +143,8 @@ void Simulator::runCircuitStep()
     foreach( eElement* el, m_changedFast ) el->setVChanged();
     m_changedFast.clear();
 
-    if( BaseProcessor::self() && !m_debugging ) BaseProcessor::self()->step();
-
+    if( BaseProcessor::self()) BaseProcessor::self()->step();
+    
     // Run Non-Linear elements
     if( ++m_noLinCounter >= m_stepsNolin )
     {
@@ -159,11 +158,9 @@ void Simulator::runCircuitStep()
             if( !m_eChangedNodeList.isEmpty() ) 
             { 
                 solveMatrix();
-                //if( !m_isrunning ) return;
             }
             if( ++counter > 200 ) break; // Limit the number of loops
         }
-        //if( counter > 0 ) qDebug() << "\nSimulator::runCircuit  Non-Linear Solved in steps:"<<counter;
     }
     if( !m_eChangedNodeList.isEmpty() ) 
     { 
@@ -199,33 +196,18 @@ void Simulator::runExtraStep()
 
 void Simulator::runContinuous()
 {
-    if( m_debugging )
-    {
-        debug();
-        emit resumeDebug();
-        return;
-    }
     simuRateChanged( m_simuRate );
     startSim();
-    m_debugging = false;
     std::cout << "\n    Running... \n"<<std::endl;
     m_timerId = this->startTimer( m_timerTick );
 }
 
-void Simulator::debug()
-{
-    startSim();
-    m_debugging = true;
-    std::cout << "\n    Debugging... \n"<<std::endl;
-}
 
 void Simulator::startSim()
 {
     foreach( eNode* busNode, m_eNodeBusList ) busNode->initialize(); // Clear Buses
     foreach( eElement* el, m_elementList )    // Initialize all Elements
     {
-        //std::cout << "initializing  "<< el->getId()
-        //         <<  std::endl;
         if( !m_paused ) el->resetState();
         el->initialize();
     }
@@ -242,7 +224,6 @@ void Simulator::startSim()
     m_matrix.createMatrix( m_eNodeList, m_elementList );
 
     // Try to solve matrix, if fail stop simulation
-    // m_matrix.printMatrix();
     if( !m_matrix.solveMatrix() )
     {
         std::cout << "Simulator::startSim, Failed to solve Matrix"
@@ -264,16 +245,11 @@ void Simulator::startSim()
     m_error = false;
 }
 
-void Simulator::stopDebug()
-{
-    m_debugging = false;
-}
 
 void Simulator::stopSim()
 {
     if( !m_isrunning ) return;
     
-    if( m_debugging ) emit pauseDebug();
     
     m_paused = false;
     m_isrunning = false;
@@ -299,7 +275,6 @@ void Simulator::stopSim()
 
 void Simulator::pauseSim()
 {
-    if( m_debugging ) emit pauseDebug();
     
     m_isrunning = false;
     m_paused = true;
@@ -314,11 +289,6 @@ void Simulator::resumeSim()
     m_isrunning = true;
     m_paused = false;
     
-    if( m_debugging )
-    {
-        emit resumeDebug();
-        return;
-    }
     std::cout << "\n    Resuming Simulation\n" << std::endl;
     m_timerId = this->startTimer( m_timerTick );
 }
@@ -371,7 +341,6 @@ int Simulator::simuRateChanged( int rate )
               << "\nCircuit Rate:     " << m_circuitRate
               << std::endl
               << "\nSimulation Speed: " << m_simuRate
-              /*<< "\nReactive   Speed: " << m_simuRate/m_stepsPrea*/
               << "\nReactive SubRate: " << m_stepsPrea
               << "\nNoLinear Subrate: " << m_stepsNolin
               << std::endl
@@ -385,10 +354,6 @@ bool Simulator::isRunning()
     return m_isrunning;
 }
 
-bool Simulator::isPaused()
-{
-    return m_paused;
-}
 
 int Simulator::reaClock()
 {
