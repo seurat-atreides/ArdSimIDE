@@ -28,11 +28,6 @@
 #include "sim_core.h"
 #include "avr_uart.h"
 
-//AvrProcessor* AvrProcessor::m_pSelf = 0l;
-
-extern "C"
-int elf_read_firmware_ext(const char * file, elf_firmware_t * firmware);
-
 AvrProcessor::AvrProcessor( QObject* parent ) 
             : BaseProcessor( parent )
 {
@@ -113,8 +108,7 @@ bool AvrProcessor::loadFirmware( QString fileN )
     else if( fileN.endsWith(".elf") )
     {
         f.flashsize = 0;
-        elf_read_firmware_ext( filename, &f );
-        
+        elf_read_firmware( filename, &f );       
         if( !f.flashsize )
         {
             QMessageBox::warning(0,tr("Failed to load firmware: "),
@@ -152,6 +146,7 @@ bool AvrProcessor::loadFirmware( QString fileN )
     if( !m_avrProcessor )
     {
         m_avrProcessor = avr_make_mcu_by_name(f.mmcu);
+        m_avrProcessor->gdb_port = 1234;
 
         if( !m_avrProcessor )
         {
@@ -159,7 +154,9 @@ bool AvrProcessor::loadFirmware( QString fileN )
                                    , tr("Could not Create AVR Processor: \"%1\"").arg(f.mmcu) );
             return false;
         }
-        int started = avr_init( m_avrProcessor );
+        // Here we could replace avr_init() with avr_gdb_init() if we want the GDB server to be active
+        // we also need to set avr->gdb_port=1234
+        int started = avr_init( m_avrProcessor ); // here is where the AVR gets started
 
         // Usart interface
             // Irq to send data to terminal panel

@@ -1,0 +1,104 @@
+<!DOCTYPE QtArduSim>
+
+<subcircuit enodes="7">
+
+    <item itemtype="eRail"
+        voltage = "5"
+        connections="
+        outnod-eNode0" >
+    </item>
+
+    <item itemtype="eDemux"
+        inputHighV = "2.5"
+        inputLowV = "2.5"
+        inputImped = "100000000000000"
+        outHighV = "5"
+        outLowV = "0"
+        outImped = "40"
+        inverted = "true"
+        tristate = "true"
+        connections="
+        input3-eNode0
+        input1-eNode1
+        input0-eNode2
+        input2-eNode3
+        outEnable-eNode4
+        output0-Package_!Q0
+        output1-Package_!Q1
+        output2-Package_!Q2
+        output3-Package_!Q3
+        output4-Package_!Q4
+        output5-Package_!Q5
+        output6-Package_!Q6
+        output7-Package_!Q7" >
+    </item>
+
+    <item itemtype="eLatchD"
+        inputHighV = "2.5"
+        inputLowV = "2.5"
+        inputImped = "100000000000000"
+        outHighV = "5"
+        outLowV = "0"
+        outImped = "40"
+        channels = "3"
+        tristate = "true"
+        inverted = "false"
+        trigger = "2"
+        connections="
+        inputEnable-eNode0
+        output1-eNode1
+        output0-eNode2
+        output2-eNode3
+        input0-Package_A0
+        input1-Package_A1
+        input2-Package_A2" >
+    </item>
+
+    <item itemtype="eAndGate"
+        inputHighV = "2.5"
+        inputLowV = "2.5"
+        inputImped = "100000000000000"
+        outHighV = "5"
+        outLowV = "0"
+        outImped = "40"
+        inverted = "true"
+        openCollector = "false"
+        numInputs = "3"
+        connections="
+        output0-eNode4
+        input0-eNode5
+        input1-eNode6
+        input2-Package_E3" >
+    </item>
+
+    <item itemtype="eBuffer"
+        inputHighV = "2.5"
+        inputLowV = "2.5"
+        inputImped = "100000000000000"
+        outHighV = "5"
+        outLowV = "0"
+        outImped = "40"
+        inverted = "true"
+        openCollector = "false"
+        tristate = "false"
+        connections="
+        input0-Package_!E2
+        output0-eNode5" >
+    </item>
+
+    <item itemtype="eBuffer"
+        inputHighV = "2.5"
+        inputLowV = "2.5"
+        inputImped = "100000000000000"
+        outHighV = "5"
+        outLowV = "0"
+        outImped = "40"
+        inverted = "true"
+        openCollector = "false"
+        tristate = "false"
+        connections="
+        output0-eNode6
+        input0-Package_!E1" >
+    </item>
+
+</subcircuit>

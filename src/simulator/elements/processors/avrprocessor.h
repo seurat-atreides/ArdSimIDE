@@ -22,11 +22,9 @@
 
 #include <QtGui>
 #include <QHash>
-
 #include "baseprocessor.h"
-
-// simavr includes
 #include "sim_avr.h"
+
 struct avr_t;
 
 class AvrProcessor : public BaseProcessor

@@ -104,7 +104,6 @@ void Chip::initChip()
     else         m_color = m_icColor;
 
     m_area = QRect( 0, 0, 8*m_width, 8*m_height );
-    //setTransformOriginPoint( togrid( boundingRect().center()) );
     setLabelPos( m_area.x(), m_area.y()-20, 0);
     setShowId( true );
 
@@ -162,8 +161,6 @@ void Chip::addPin( QString id, QString type, QString label, int pos, int xpos, i
 {
     Pin* pin = new Pin( angle, QPoint(xpos, ypos), m_id+"-"+id, pos-1, this ); // pos in package starts at 1
     
-    //m_pinMap[id] = pin;
-    
     pin->setLabelText( label );
     
     if     ( type == "inverted" ) pin->setInverted( true );
@@ -183,49 +180,6 @@ void Chip::addPin( QString id, QString type, QString label, int pos, int xpos, i
     m_ePin[pos-1] = pin;
     m_pin[pos-1]  = pin;
 }
-
-/*void Chip::updatePin( QString id, QString type, QString label, int pos, int xpos, int ypos, int angle )
-{
-    Pin* pin = m_pin[pos-1]; // pos in package starts at 1
-
-    pin->setLabelText( label );
-    pin->setPos( QPoint(xpos, ypos) );
-    
-    int oldAngle = pin->pinAngle();
-    if( angle != oldAngle )
-    {
-        if     ( oldAngle == 0 )   m_rigPin.removeOne( pin );
-        else if( oldAngle == 90 )  m_topPin.removeOne( pin );
-        else if( oldAngle == 180 ) m_lefPin.removeOne( pin );
-        else if( oldAngle == 270 ) m_botPin.removeOne( pin );
-        
-        if     ( angle == 0 )   m_rigPin.append( pin );
-        else if( angle == 90 )  m_topPin.append( pin );
-        else if( angle == 180 ) m_lefPin.append( pin );
-        else if( angle == 270 ) m_botPin.append( pin );
-    }
-    
-    pin->setPinAngle( angle );
-    pin->setLabelPos();
-    
-    if( type == "inverted" ) pin->setInverted( true );
-    else                     pin->setInverted( false );
-    
-    if( type == "unused" )   pin->setUnused( true );
-    else                     pin->setUnused( false );
-
-    if( type == "null" )
-    {
-        pin->setVisible( false );
-        pin->setLabelText( "" );
-    }
-    else pin->setVisible( true );
-   
-    if( m_isLS ) pin->setLabelColor( QColor( 0, 0, 0 ) );
-    else                  pin->setLabelColor( QColor( 250, 250, 200 ) );
-    
-    pin->isMoved();
-}*/
 
 bool Chip::logicSymbol()
 {
@@ -247,11 +201,6 @@ void Chip::setLogicSymbol( bool ls )
 
 void Chip::remove()
 {
-    /*for( uint i=0; i<m_ePin.size(); i++ )
-    {
-        Pin* pin = static_cast<Pin*>(m_ePin[i]);
-        if( pin->connector() ) pin->connector()->remove();
-    }*/
     Component::remove();
 }
 
@@ -259,11 +208,6 @@ void Chip::contextMenuEvent( QGraphicsSceneContextMenuEvent* event )
 {
     event->accept();
     QMenu *menu = new QMenu();
-    /*QAction *loadAction = menu->addAction( QIcon(":/fileopen.png"),tr("Load firmware") );
-    connect( loadAction, SIGNAL(triggered()), this, SLOT(slotLoad()) );
-
-    QAction *reloadAction = menu->addAction( QIcon(":/fileopen.png"),tr("Reload firmware") );
-    connect( reloadAction, SIGNAL(triggered()), this, SLOT(slotReload()) );*/
 
     menu->addSeparator();
 

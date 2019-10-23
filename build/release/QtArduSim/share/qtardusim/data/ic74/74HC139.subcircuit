@@ -1,0 +1,43 @@
+<!DOCTYPE QtArduSim>
+
+<subcircuit enodes="0">
+
+    <item itemtype="eBcdToDec"
+        inputHighV = "2.5"
+        inputLowV = "2.5"
+        inputImped = "100000000000000"
+        outHighV = "5"
+        outLowV = "0"
+        outImped = "40"
+        inverted = "true"
+        tristate = "true"
+        connections="
+        output0-Package_!Y10
+        output1-Package_!Y11
+        output2-Package_!Y12
+        output3-Package_!Y13
+        outEnable-Package_!E1
+        input0-Package_A10
+        input1-Package_A11" >
+    </item>
+
+    <item itemtype="eBcdToDec"
+        inputHighV = "2.5"
+        inputLowV = "2.5"
+        inputImped = "100000000000000"
+        outHighV = "5"
+        outLowV = "0"
+        outImped = "40"
+        inverted = "true"
+        tristate = "true"
+        connections="
+        outEnable-Package_!E0
+        output0-Package_!Y00
+        output1-Package_!Y01
+        output2-Package_!Y02
+        output3-Package_!Y03
+        input0-Package_A00
+        input1-Package_A01" >
+    </item>
+
+</subcircuit>

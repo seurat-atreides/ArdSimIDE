@@ -1,7 +1,7 @@
-build_*/build/
-build_*/release/
-build_*/Makefile*
-build_*/*.cpp
+build*/build/
+build*/release/
+build*/Makefile*
+build*/*.cpp
 *.pro.*
 html*
 latex*

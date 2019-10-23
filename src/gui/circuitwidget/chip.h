@@ -48,9 +48,6 @@ class MAINMODULE_EXPORT Chip : public Component, public eElement
 
         virtual void addPin( QString id, QString type, QString label,
                              int pos, int xpos, int ypos, int angle );
-        
-        //virtual void updatePin( QString id, QString type, QString label,
-        //                     int pos, int xpos, int ypos, int angle );
 
         virtual void initChip();
 
@@ -64,7 +61,6 @@ class MAINMODULE_EXPORT Chip : public Component, public eElement
         QColor m_icColor;
 
         QString m_pkgeFile;     // file containig package defs
-        //QString m_dataFile;     // xml file containig entry
         
         QList<Pin*> m_topPin;
         QList<Pin*> m_botPin;
